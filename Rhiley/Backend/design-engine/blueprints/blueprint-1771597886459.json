@@ -1,0 +1,26 @@
+{
+  "type": "page",
+  "layout": "vertical",
+  "theme": {
+    "primary": "#e03a37",
+    "secondary": "#6690a5",
+    "neutral": "#e3ceae"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "height": 577,
+      "backgroundColor": "#e03a37"
+    },
+    {
+      "type": "section",
+      "height": 215,
+      "backgroundColor": "#e3ceae"
+    },
+    {
+      "type": "contentBlock",
+      "height": 189,
+      "backgroundColor": "#846c5a"
+    }
+  ]
+}

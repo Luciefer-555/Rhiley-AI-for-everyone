@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "type": "page",
+  "layout": "vertical",
+  "theme": {
+    "primary": "#e03a37",
+    "secondary": "#6690a5",
+    "neutral": "#e3ceae"
+  },
+  "sections": [
+    {
+      "id": "section-0",
+      "type": "hero",
+      "style": {
+        "height": 577,
+        "backgroundColor": "#e03a37"
+      },
+      "content": {
+        "title": "Welcome",
+        "subtitle": "Hero Section"
+      }
+    },
+    {
+      "id": "section-1",
+      "type": "section",
+      "style": {
+        "height": 215,
+        "backgroundColor": "#e3ceae"
+      },
+      "content": {
+        "title": "Section 1",
+        "text": "Full width section content"
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "contentBlock",
+      "style": {
+        "height": 189,
+        "backgroundColor": "#846c5a"
+      },
+      "content": {
+        "title": "Content 2",
+        "text": "Content block text"
+      }
+    }
+  ]
+}

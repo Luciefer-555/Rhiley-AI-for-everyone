@@ -1,0 +1,106 @@
+﻿
+> my-v0-project@0.1.0 build
+> next build
+
+node.exe :  ΓÜá 
+Invalid 
+next.config.mjs 
+options detected: 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ( ΓÜá Invalid    
+ ne...ions detected    
+: :String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+ ΓÜá     Unrecognized 
+key(s) in object: 
+'swcMinify'
+ ΓÜá See more info 
+here: https://nextjs.or
+g/docs/messages/invalid
+-next-config
+ ΓÜá `devIndicators.bui
+ldActivity` is 
+deprecated and no 
+longer configurable. 
+Please remove it from 
+next.config.mjs.
+   Γû▓ Next.js 15.2.6
+   - Experiments (use with caution):
+     Γ£ô optimizeCss
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./app/page.tsx
+Error:   [31mx[0m 
+`ssr: false` is not 
+allowed with 
+`next/dynamic` in 
+Server Components. 
+Please move it into a 
+client component.
+    ,-[[36;1;4mC:\User
+s\saipr\Downloads\Rhile
+y\Log in\app\page.tsx[
+0m:3:1]
+ [2m 1[0m |     
+import dynamic from 
+"next/dynamic"
+ [2m 2[0m |     
+ [2m 3[0m | [35;1m,
+[0m[35;1m-[0m[35;1m>
+[0m const 
+NeumorphicLogin = 
+dynamic(() => import(".
+./neumorphic-login"), {
+ [2m 4[0m | 
+[35;1m|[0m     ssr: 
+false,
+ [2m 5[0m | 
+[35;1m|[0m     
+loading: () => <div cla
+ssName="min-h-screen 
+bg-slate-50 flex 
+items-center 
+justify-center">
+ [2m 6[0m | 
+[35;1m|[0m       
+<div className="animate
+-pulse bg-gray-200 
+rounded-2xl h-96 
+w-96"></div>
+ [2m 7[0m | 
+[35;1m|[0m     </div>
+ [2m 8[0m | [35;1m`
+[0m[35;1m-[0m[35;1m>
+[0m })
+ [2m 9[0m |     
+ [2m10[0m |     
+export default 
+function Page() {
+ [2m11[0m |       
+return (
+    `----
+
+Import trace for 
+requested module:
+./app/page.tsx
+
+
+> Build failed because 
+of webpack errors
