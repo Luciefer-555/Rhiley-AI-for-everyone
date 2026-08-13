@@ -1,0 +1,17 @@
+{
+  "name": "rhiley-browser-service",
+  "version": "1.0.0",
+  "description": "Rhiley Browser Intelligence — headless scraper powered by Playwright",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "playwright": "^1.44.0"
+  }
+}

@@ -1,0 +1,1571 @@
+{
+  "meta": {
+    "name": "Rhiley's Ultimate Design Styles & Color Theory Dataset",
+    "version": "1.0.0",
+    "description": "Complete dataset of design aesthetics, color theory rules, palettes, combos, gradients, and UI mood boards for every type of project.",
+    "author": "Rhiley — Senior Frontend AI",
+    "totalPalettes": 120,
+    "totalDesignStyles": 30
+  },
+
+  "colorTheory": {
+
+    "fundamentals": {
+      "colorWheel": {
+        "primary": ["Red", "Yellow", "Blue"],
+        "secondary": ["Orange", "Green", "Violet"],
+        "tertiary": ["Red-Orange", "Yellow-Orange", "Yellow-Green", "Blue-Green", "Blue-Violet", "Red-Violet"]
+      },
+      "colorProperties": {
+        "hue": "The pure color itself — position on the color wheel",
+        "saturation": "Intensity or purity of the color (0% = grey, 100% = pure color)",
+        "lightness": "How light or dark the color is (0% = black, 100% = white)",
+        "value": "Brightness of the color (used in HSV model)",
+        "chroma": "Colorfulness relative to white — similar to saturation but perceptual",
+        "temperature": "Warm (reds, oranges, yellows) vs Cool (blues, greens, purples)"
+      }
+    },
+
+    "harmonies": {
+      "monochromatic": {
+        "definition": "Single hue with varying lightness and saturation",
+        "feel": "Cohesive, elegant, sophisticated, safe",
+        "bestFor": "Luxury brands, minimalism, editorial, premium SaaS",
+        "example": {
+          "name": "Violet Monochromatic",
+          "shades": ["#f5f3ff", "#ede9fe", "#ddd6fe", "#c4b5fd", "#a78bfa", "#8b5cf6", "#7c3aed", "#6d28d9", "#5b21b6", "#4c1d95"]
+        }
+      },
+      "analogous": {
+        "definition": "3-5 colors adjacent on the color wheel",
+        "feel": "Natural, harmonious, serene, comfortable",
+        "bestFor": "Nature brands, wellness, food, lifestyle, photography portfolios",
+        "example": {
+          "name": "Ocean Analogous",
+          "colors": ["#0ea5e9", "#06b6d4", "#14b8a6", "#10b981", "#34d399"],
+          "note": "Blues and greens — ocean, nature, fresh"
+        }
+      },
+      "complementary": {
+        "definition": "Two colors directly opposite on the color wheel",
+        "feel": "High contrast, vibrant, energetic, bold",
+        "bestFor": "Sports brands, gaming, e-commerce CTAs, attention-grabbing UI",
+        "example": {
+          "name": "Purple & Yellow",
+          "primary": "#8b5cf6",
+          "complement": "#f59e0b",
+          "note": "Max contrast — use 60/30/10 to avoid visual chaos"
+        }
+      },
+      "splitComplementary": {
+        "definition": "Base color + two colors adjacent to its complement",
+        "feel": "High contrast but softer than pure complementary",
+        "bestFor": "Creative agencies, portfolios, bold but refined UI",
+        "example": {
+          "name": "Blue + Orange-Yellow + Red-Yellow",
+          "base": "#3b82f6",
+          "split1": "#f97316",
+          "split2": "#eab308"
+        }
+      },
+      "triadic": {
+        "definition": "Three colors equally spaced on the color wheel (120° apart)",
+        "feel": "Vibrant, playful, diverse, rich",
+        "bestFor": "Children's brands, playful apps, creative studios, bold editorial",
+        "example": {
+          "name": "Classic Triadic",
+          "colors": ["#ef4444", "#22c55e", "#3b82f6"],
+          "note": "Red, Green, Blue — always vibrant and rich"
+        }
+      },
+      "tetradic": {
+        "definition": "Four colors forming a rectangle on the color wheel",
+        "feel": "Complex, rich, varied — hard to balance",
+        "bestFor": "Entertainment, gaming UI, complex dashboards",
+        "example": {
+          "name": "Tetradic Rich",
+          "colors": ["#8b5cf6", "#ec4899", "#f59e0b", "#10b981"]
+        }
+      },
+      "square": {
+        "definition": "Four colors equally spaced (90° apart)",
+        "feel": "Balanced richness, energetic but structured",
+        "bestFor": "Brand systems, design systems, complex UI",
+        "example": {
+          "name": "Square Vibrant",
+          "colors": ["#ef4444", "#eab308", "#22c55e", "#3b82f6"]
+        }
+      }
+    },
+
+    "colorRules": {
+      "sixtyThirtyTen": {
+        "rule": "60% dominant, 30% secondary, 10% accent",
+        "description": "The most reliable color balance rule for UI design",
+        "example": {
+          "dominant_60": "Background + large surfaces",
+          "secondary_30": "Cards, sidebars, UI components",
+          "accent_10": "CTAs, highlights, hover states, icons"
+        }
+      },
+      "wcagContrast": {
+        "AA_normal_text": "4.5:1 minimum contrast ratio",
+        "AA_large_text": "3:1 minimum contrast ratio",
+        "AAA_normal_text": "7:1 for highest accessibility",
+        "AAA_large_text": "4.5:1 for large text AAA",
+        "tools": ["WebAIM Contrast Checker", "Figma A11y plugin", "Color.review"]
+      },
+      "colorTemperature": {
+        "warm": {
+          "hues": ["Red", "Orange", "Yellow", "Yellow-Green"],
+          "feel": "Energetic, exciting, passionate, welcoming, appetite-stimulating",
+          "bestFor": "Food, restaurants, fitness, sales, urgency CTAs"
+        },
+        "cool": {
+          "hues": ["Blue", "Blue-Green", "Blue-Violet", "Violet"],
+          "feel": "Calm, trustworthy, professional, tech, sophisticated",
+          "bestFor": "Finance, tech, healthcare, SaaS, corporate"
+        },
+        "neutral": {
+          "hues": ["White", "Grey", "Black", "Beige", "Taupe"],
+          "feel": "Timeless, refined, lets content breathe",
+          "bestFor": "Luxury, editorial, portfolio, photography"
+        }
+      }
+    }
+  },
+
+  "designStyles": {
+
+    "minimalism": {
+      "id": "minimalism",
+      "name": "Minimalism",
+      "vibe": "Clean, breathing, intentional, sophisticated",
+      "principles": [
+        "Generous whitespace — let elements breathe",
+        "Maximum 2 typefaces",
+        "No decorative elements without purpose",
+        "Single accent color",
+        "Strong typographic hierarchy does the heavy lifting",
+        "Grid-based layout with strict alignment"
+      ],
+      "typography": {
+        "display": "Cormorant Garamond or Playfair Display",
+        "body": "DM Sans or Public Sans",
+        "weight_range": "300-700",
+        "letter_spacing": "tight to normal for body, wide for labels"
+      },
+      "colorPalettes": [
+        {
+          "name": "Paper White",
+          "bg": "#FFFFFF",
+          "surface": "#F8F8F8",
+          "border": "#E5E5E5",
+          "text": "#111111",
+          "muted": "#888888",
+          "accent": "#000000",
+          "note": "Pure minimal — nothing distracts"
+        },
+        {
+          "name": "Warm Sand",
+          "bg": "#FAF7F2",
+          "surface": "#F0EBE1",
+          "border": "#D4C5A9",
+          "text": "#1C1917",
+          "muted": "#78716C",
+          "accent": "#C2410C",
+          "note": "Warm neutral with terracotta accent"
+        },
+        {
+          "name": "Ash Dark",
+          "bg": "#111111",
+          "surface": "#1A1A1A",
+          "border": "#2A2A2A",
+          "text": "#F5F5F5",
+          "muted": "#666666",
+          "accent": "#FFFFFF",
+          "note": "Dark minimalism — bold and stark"
+        },
+        {
+          "name": "Stone Light",
+          "bg": "#F4F1ED",
+          "surface": "#EAE6E0",
+          "border": "#D0CAC0",
+          "text": "#2A2520",
+          "muted": "#8A8078",
+          "accent": "#6B5B4E",
+          "note": "Earthy, gallery-like neutrals"
+        }
+      ]
+    },
+
+    "brutalism": {
+      "id": "brutalism",
+      "name": "Brutalism / Neo-Brutalism",
+      "vibe": "Raw, bold, unapologetic, high contrast, intentionally rough",
+      "principles": [
+        "Hard black borders (2-4px solid black)",
+        "Offset box shadows (4-8px solid, no blur)",
+        "Primary colors used flat and punchy",
+        "No rounded corners or very slight rounding",
+        "Heavy bold typography — condensed or display",
+        "Intentional asymmetry and visual tension",
+        "Background often off-white or primary color"
+      ],
+      "typography": {
+        "display": "Bebas Neue, Big Shoulders Display, Archivo Black",
+        "body": "Space Mono, Barlow, Oswald",
+        "weight_range": "700-900",
+        "letter_spacing": "normal to tight"
+      },
+      "colorPalettes": [
+        {
+          "name": "Neo-Brutal Yellow",
+          "bg": "#FFEF00",
+          "surface": "#FFFFFF",
+          "border": "#000000",
+          "text": "#000000",
+          "accent": "#000000",
+          "shadow": "4px 4px 0px #000000",
+          "note": "Classic neo-brutal — yellow + black, hard shadows"
+        },
+        {
+          "name": "Neo-Brutal Pink",
+          "bg": "#FF90E8",
+          "surface": "#FFFFFF",
+          "border": "#000000",
+          "text": "#000000",
+          "accent": "#000000",
+          "shadow": "4px 4px 0px #000000",
+          "note": "Viral neo-brutal — hot pink + black"
+        },
+        {
+          "name": "Neo-Brutal Lime",
+          "bg": "#CBFF4D",
+          "surface": "#FFFFFF",
+          "border": "#000000",
+          "text": "#000000",
+          "accent": "#000000",
+          "shadow": "4px 4px 0px #000000",
+          "note": "Electric lime — striking and modern"
+        },
+        {
+          "name": "Neo-Brutal Orange",
+          "bg": "#FF5733",
+          "surface": "#FFF5F2",
+          "border": "#000000",
+          "text": "#000000",
+          "accent": "#000000",
+          "shadow": "5px 5px 0px #000000",
+          "note": "Aggressive orange — high energy"
+        },
+        {
+          "name": "Dark Brutal",
+          "bg": "#0D0D0D",
+          "surface": "#1A1A1A",
+          "border": "#FFFFFF",
+          "text": "#FFFFFF",
+          "accent": "#FFEF00",
+          "shadow": "4px 4px 0px #FFFFFF",
+          "note": "Dark brutal — reversed shadows with white borders"
+        }
+      ]
+    },
+
+    "glassmorphism": {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "vibe": "Frosted, translucent, layered depth, dreamy, premium",
+      "principles": [
+        "backdrop-filter: blur(10-30px) on cards/modals",
+        "Semi-transparent backgrounds (rgba with 0.05-0.15 alpha)",
+        "Subtle white/light border (1px rgba white 0.1-0.2)",
+        "Always needs a gradient or image background behind",
+        "Soft glow shadows, never hard shadows",
+        "Light content on dark blurred backgrounds works best"
+      ],
+      "css": {
+        "standard": "background: rgba(255,255,255,0.08); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.12);",
+        "heavy": "background: rgba(255,255,255,0.12); backdrop-filter: blur(40px) saturate(180%); border: 1px solid rgba(255,255,255,0.2);",
+        "dark": "background: rgba(0,0,0,0.25); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08);"
+      },
+      "typography": {
+        "display": "Syne, Plus Jakarta Sans, Outfit",
+        "body": "DM Sans, Manrope, Urbanist",
+        "weight_range": "300-700"
+      },
+      "colorPalettes": [
+        {
+          "name": "Aurora Glass",
+          "bg_gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          "glass_surface": "rgba(255,255,255,0.08)",
+          "glass_border": "rgba(255,255,255,0.15)",
+          "blur": "blur(24px)",
+          "text": "#FFFFFF",
+          "accent": "#E0C3FC",
+          "note": "Purple aurora with glass cards on top"
+        },
+        {
+          "name": "Ocean Glass",
+          "bg_gradient": "linear-gradient(135deg, #0f0c29, #302b63, #24243e)",
+          "glass_surface": "rgba(255,255,255,0.06)",
+          "glass_border": "rgba(255,255,255,0.1)",
+          "blur": "blur(20px)",
+          "text": "#FFFFFF",
+          "accent": "#00d4ff",
+          "note": "Deep dark ocean with cyan accents"
+        },
+        {
+          "name": "Sunset Glass",
+          "bg_gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+          "glass_surface": "rgba(255,255,255,0.1)",
+          "glass_border": "rgba(255,255,255,0.2)",
+          "blur": "blur(16px)",
+          "text": "#FFFFFF",
+          "accent": "#FFE0E0",
+          "note": "Pink sunset vibes — feminine and warm"
+        },
+        {
+          "name": "Emerald Glass",
+          "bg_gradient": "linear-gradient(135deg, #11998e, #38ef7d)",
+          "glass_surface": "rgba(255,255,255,0.08)",
+          "glass_border": "rgba(255,255,255,0.15)",
+          "blur": "blur(20px)",
+          "text": "#FFFFFF",
+          "accent": "#D1FAE5",
+          "note": "Fresh green glass — nature tech"
+        },
+        {
+          "name": "Midnight Glass",
+          "bg_gradient": "linear-gradient(135deg, #0a0a0f 0%, #1a0533 50%, #0a1628 100%)",
+          "glass_surface": "rgba(255,255,255,0.04)",
+          "glass_border": "rgba(255,255,255,0.07)",
+          "blur": "blur(30px)",
+          "text": "#FFFFFF",
+          "accent": "#8b5cf6",
+          "note": "Ultra dark glass — premium, mysterious"
+        }
+      ]
+    },
+
+    "cyberpunk": {
+      "id": "cyberpunk",
+      "name": "Cyberpunk / Neon",
+      "vibe": "Dark, electric, neon-lit, futuristic, gritty",
+      "principles": [
+        "Near-black or true black backgrounds",
+        "Neon accent colors — cyan, magenta, yellow-green",
+        "Glow effects on text and borders (text-shadow, box-shadow)",
+        "Glitch effects on hover or load",
+        "Scan line overlays for texture",
+        "Monospace or tech display fonts",
+        "Angular or grid-based layouts"
+      ],
+      "typography": {
+        "display": "Orbitron, Turret Road, Audiowide, Rajdhani",
+        "body": "Exo 2, Barlow, Rajdhani",
+        "mono": "Share Tech Mono, Space Mono, VT323",
+        "weight_range": "400-700"
+      },
+      "colorPalettes": [
+        {
+          "name": "Neo Tokyo",
+          "bg": "#0a0010",
+          "surface": "#12001e",
+          "border": "#ff00ff33",
+          "text": "#ffffff",
+          "accent1": "#ff00ff",
+          "accent2": "#00ffff",
+          "accent3": "#ffff00",
+          "glow1": "0 0 20px #ff00ff, 0 0 40px #ff00ff50",
+          "glow2": "0 0 20px #00ffff, 0 0 40px #00ffff50",
+          "note": "Classic cyberpunk — magenta + cyan on pure black"
+        },
+        {
+          "name": "Blade Runner",
+          "bg": "#050510",
+          "surface": "#0d0d1a",
+          "border": "#1a1a3a",
+          "text": "#e0e0ff",
+          "accent1": "#ff6b35",
+          "accent2": "#00d4ff",
+          "accent3": "#9b59b6",
+          "glow1": "0 0 15px #ff6b35, 0 0 30px #ff6b3550",
+          "note": "Blade Runner orange-blue — cinematic noir"
+        },
+        {
+          "name": "Matrix Green",
+          "bg": "#000000",
+          "surface": "#001100",
+          "border": "#00ff0020",
+          "text": "#00ff00",
+          "accent1": "#00ff41",
+          "accent2": "#008f11",
+          "glow1": "0 0 10px #00ff00, 0 0 30px #00ff0050",
+          "note": "Matrix terminal green on black"
+        },
+        {
+          "name": "Vaporwave",
+          "bg": "#1a0533",
+          "surface": "#2a0845",
+          "border": "#9b59b630",
+          "text": "#ffffff",
+          "accent1": "#ff6ec7",
+          "accent2": "#a78bfa",
+          "accent3": "#00d4ff",
+          "gradient": "linear-gradient(135deg, #ff6ec7, #a78bfa, #00d4ff)",
+          "note": "Vaporwave aesthetic — pink purple cyan"
+        },
+        {
+          "name": "Toxic Neon",
+          "bg": "#050505",
+          "surface": "#0a0a0a",
+          "border": "#39ff1430",
+          "text": "#f0f0f0",
+          "accent1": "#39ff14",
+          "accent2": "#ff3131",
+          "accent3": "#ffffff",
+          "glow1": "0 0 20px #39ff14",
+          "note": "Toxic green + red — dangerous energy"
+        }
+      ]
+    },
+
+    "luxury": {
+      "id": "luxury",
+      "name": "Luxury / High-End",
+      "vibe": "Refined, exclusive, timeless, opulent, premium",
+      "principles": [
+        "Dark backgrounds with gold/platinum accents",
+        "OR pure white with black and single metallic accent",
+        "High-end editorial serif display fonts",
+        "Very thin body weight (300)",
+        "Maximum whitespace — never crowded",
+        "Subtle textures: noise, grain, marble",
+        "Micro-animations only — nothing loud",
+        "Photography-first design"
+      ],
+      "typography": {
+        "display": "Playfair Display, Cormorant Garamond, Bodoni Moda",
+        "body": "Lora, Source Serif 4, DM Sans Light",
+        "accent": "Sacramento, Great Vibes (sparingly)",
+        "weight_range": "300-700, bold only for display"
+      },
+      "colorPalettes": [
+        {
+          "name": "Black Gold",
+          "bg": "#0C0C0C",
+          "surface": "#141414",
+          "border": "#2A2A2A",
+          "text": "#F5F0E8",
+          "muted": "#888888",
+          "accent1": "#D4AF37",
+          "accent2": "#C0A060",
+          "accent3": "#8B7536",
+          "note": "Classic luxury — black with gold. Jewelry, watches, premium"
+        },
+        {
+          "name": "Ivory Platinum",
+          "bg": "#F8F6F1",
+          "surface": "#EFEBE2",
+          "border": "#D8D0C0",
+          "text": "#1A1814",
+          "muted": "#8A8070",
+          "accent1": "#A8A0A0",
+          "accent2": "#C0B8B0",
+          "note": "Platinum tones — cool white luxury, couture"
+        },
+        {
+          "name": "Champagne Dark",
+          "bg": "#1A1612",
+          "surface": "#241E18",
+          "border": "#3A3028",
+          "text": "#F5EDD8",
+          "muted": "#8A7A60",
+          "accent1": "#E8C88A",
+          "accent2": "#C8A050",
+          "note": "Champagne and cognac — warm dark luxury"
+        },
+        {
+          "name": "Deep Emerald Luxury",
+          "bg": "#0A1A0E",
+          "surface": "#122018",
+          "border": "#1E3020",
+          "text": "#E8F5EA",
+          "muted": "#6A8A6E",
+          "accent1": "#4CAF50",
+          "accent2": "#D4AF37",
+          "note": "British luxury — deep green with gold, Harrods-inspired"
+        },
+        {
+          "name": "Midnight Navy Luxury",
+          "bg": "#050A18",
+          "surface": "#0A1228",
+          "border": "#161E38",
+          "text": "#E8EEFF",
+          "muted": "#6070A0",
+          "accent1": "#D4AF37",
+          "accent2": "#8090C0",
+          "note": "Navy and gold — yacht club, private banking"
+        }
+      ]
+    },
+
+    "retro_vintage": {
+      "id": "retro_vintage",
+      "name": "Retro / Vintage",
+      "vibe": "Nostalgic, warm, imperfect, charming, storied",
+      "principles": [
+        "Muted, desaturated palette — no pure bright colors",
+        "Paper textures, grain overlays, noise",
+        "Warm yellows, burnt oranges, mustards, sage greens",
+        "Distressed or worn typography",
+        "Serif or slab serif display fonts",
+        "Circular badges, ribbons, stamps as UI elements",
+        "No clean borders — rough or hand-drawn feel"
+      ],
+      "typography": {
+        "display": "Righteous, Pacifico, Bungee, Playfair Display",
+        "body": "Lora, Bitter, Libre Baskerville, EB Garamond",
+        "weight_range": "400-700"
+      },
+      "colorPalettes": [
+        {
+          "name": "American Diner",
+          "bg": "#FFF8E7",
+          "surface": "#FFF0C8",
+          "border": "#D4A017",
+          "text": "#2A1810",
+          "accent1": "#CC3300",
+          "accent2": "#D4A017",
+          "accent3": "#2A5CAA",
+          "note": "50s diner — red white blue with mustard"
+        },
+        {
+          "name": "Faded Film",
+          "bg": "#F5EFE0",
+          "surface": "#EDE4CA",
+          "border": "#C8B898",
+          "text": "#2C2010",
+          "accent1": "#8B4513",
+          "accent2": "#CD853F",
+          "accent3": "#556B2F",
+          "note": "Old film photography — sepia, brown, muted olive"
+        },
+        {
+          "name": "70s Groovy",
+          "bg": "#F2E8D0",
+          "surface": "#E8D8B0",
+          "border": "#C8A860",
+          "text": "#3A2010",
+          "accent1": "#CC5500",
+          "accent2": "#8B7355",
+          "accent3": "#6B8E23",
+          "note": "1970s — burnt orange, avocado green, mustard"
+        },
+        {
+          "name": "Punk Zine",
+          "bg": "#FFFFF0",
+          "surface": "#F5F5DC",
+          "border": "#000000",
+          "text": "#000000",
+          "accent1": "#FF0000",
+          "accent2": "#0000FF",
+          "accent3": "#FFFF00",
+          "note": "DIY punk zine — raw primary colors on off-white"
+        },
+        {
+          "name": "Antique Shop",
+          "bg": "#E8DCC8",
+          "surface": "#D8C8A8",
+          "border": "#A89060",
+          "text": "#28180A",
+          "accent1": "#8B1A1A",
+          "accent2": "#4A3728",
+          "note": "Antique shop — dark reds, leather browns, aged paper"
+        }
+      ]
+    },
+
+    "dark_mode": {
+      "id": "dark_mode",
+      "name": "Dark Mode / Dark UI",
+      "vibe": "Modern, easy on eyes, premium, techy, sophisticated",
+      "principles": [
+        "Never use pure black (#000) — use dark grays #0a-#1a range",
+        "Layered surfaces — each layer slightly lighter",
+        "Reduce saturation for secondary colors in dark mode",
+        "Bright accent pops on dark background",
+        "Elevation through lightness, not shadows",
+        "Text at 3 levels: primary, secondary (60% opacity), muted (40%)"
+      ],
+      "typography": {
+        "display": "Syne, Unbounded, Outfit, Plus Jakarta Sans",
+        "body": "Manrope, DM Sans, Figtree",
+        "weight_range": "300-700"
+      },
+      "colorPalettes": [
+        {
+          "name": "Pure Dark",
+          "bg": "#09090B",
+          "surface": "#111113",
+          "surface2": "#18181B",
+          "border": "#27272A",
+          "text": "#FAFAFA",
+          "text2": "#A1A1AA",
+          "text3": "#71717A",
+          "accent": "#8B5CF6",
+          "note": "Standard dark UI — Vercel/Linear inspired"
+        },
+        {
+          "name": "Slate Dark",
+          "bg": "#0F172A",
+          "surface": "#1E293B",
+          "surface2": "#334155",
+          "border": "#475569",
+          "text": "#F8FAFC",
+          "text2": "#94A3B8",
+          "text3": "#64748B",
+          "accent": "#38BDF8",
+          "note": "Slate with sky blue — Tailwind dark palette"
+        },
+        {
+          "name": "Zinc Dark",
+          "bg": "#101012",
+          "surface": "#18181C",
+          "surface2": "#222228",
+          "border": "#303038",
+          "text": "#F4F4F8",
+          "text2": "#9090A0",
+          "text3": "#606070",
+          "accent": "#A78BFA",
+          "note": "Cool zinc grays — Radix/Shadcn inspired"
+        },
+        {
+          "name": "Midnight Purple",
+          "bg": "#09050F",
+          "surface": "#130A1E",
+          "surface2": "#1E1030",
+          "border": "#2D1A48",
+          "text": "#F0E8FF",
+          "text2": "#9080B0",
+          "text3": "#604880",
+          "accent": "#B48AFF",
+          "note": "Deep purple dark — mystical, creative"
+        },
+        {
+          "name": "Charcoal Warm",
+          "bg": "#111008",
+          "surface": "#1A180E",
+          "surface2": "#252318",
+          "border": "#38351E",
+          "text": "#F5F2E8",
+          "text2": "#A09880",
+          "text3": "#706858",
+          "accent": "#F0C060",
+          "note": "Warm charcoal — golden accents, cozy dark"
+        }
+      ]
+    },
+
+    "light_minimal": {
+      "id": "light_minimal",
+      "name": "Light / Clean UI",
+      "vibe": "Airy, productive, fresh, approachable, modern",
+      "principles": [
+        "White or near-white background",
+        "Subtle gray tones for surfaces",
+        "One accent color — used sparingly",
+        "Clean grid layout",
+        "Subtle shadows for elevation",
+        "Sans-serif typography"
+      ],
+      "colorPalettes": [
+        {
+          "name": "Notion Light",
+          "bg": "#FFFFFF",
+          "surface": "#F7F7F5",
+          "surface2": "#EFEEEB",
+          "border": "#E3E2E0",
+          "text": "#191919",
+          "text2": "#737373",
+          "text3": "#999999",
+          "accent": "#2383E2",
+          "note": "Notion-inspired — ultra clean productive UI"
+        },
+        {
+          "name": "Linear Light",
+          "bg": "#FAFAFA",
+          "surface": "#F4F4F4",
+          "surface2": "#EBEBEB",
+          "border": "#E0E0E0",
+          "text": "#101010",
+          "text2": "#606060",
+          "text3": "#A0A0A0",
+          "accent": "#5E6AD2",
+          "note": "Linear-inspired — indigo accent, ultra refined"
+        },
+        {
+          "name": "Mint Fresh",
+          "bg": "#F0FFF8",
+          "surface": "#E0F8EE",
+          "border": "#B0E8CC",
+          "text": "#0A2818",
+          "text2": "#3A7858",
+          "accent": "#059669",
+          "note": "Mint fresh — health, wellness, eco apps"
+        },
+        {
+          "name": "Sky Blue Light",
+          "bg": "#F0F8FF",
+          "surface": "#E0F0FF",
+          "border": "#B0D8FF",
+          "text": "#0A1828",
+          "text2": "#3A6888",
+          "accent": "#0EA5E9",
+          "note": "Sky fresh — clean tech, medical, finance"
+        }
+      ]
+    },
+
+    "gradientMesh": {
+      "id": "gradientMesh",
+      "name": "Gradient Mesh / Aurora",
+      "vibe": "Modern, vibrant, dynamic, dreamy, premium digital",
+      "principles": [
+        "Multiple radial gradients layered together",
+        "Soft blurred colored blobs in corners/background",
+        "High saturation colors but blurred into softness",
+        "Usually on dark or light base",
+        "Text must be readable — contrast check essential",
+        "Popular in modern SaaS landing pages"
+      ],
+      "colorPalettes": [
+        {
+          "name": "Stripe Mesh",
+          "bg": "#0D1117",
+          "gradients": [
+            "radial-gradient(ellipse at 0% 0%, rgba(139,92,246,0.4) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 100% 0%, rgba(6,182,212,0.3) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 50% 100%, rgba(236,72,153,0.25) 0%, transparent 60%)"
+          ],
+          "text": "#FFFFFF",
+          "accent": "#A78BFA",
+          "note": "Stripe-inspired mesh — purple cyan pink blobs"
+        },
+        {
+          "name": "Aurora Borealis",
+          "bg": "#030712",
+          "gradients": [
+            "radial-gradient(ellipse at 20% 30%, rgba(16,185,129,0.4) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 80% 20%, rgba(59,130,246,0.4) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 60% 80%, rgba(139,92,246,0.3) 0%, transparent 50%)"
+          ],
+          "text": "#FFFFFF",
+          "accent": "#34D399",
+          "note": "Northern lights — green blue purple"
+        },
+        {
+          "name": "Sunset Mesh",
+          "bg": "#0F0005",
+          "gradients": [
+            "radial-gradient(ellipse at 0% 100%, rgba(251,146,60,0.5) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 100% 50%, rgba(236,72,153,0.4) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(139,92,246,0.3) 0%, transparent 50%)"
+          ],
+          "text": "#FFFFFF",
+          "accent": "#FB923C",
+          "note": "Sunset gradient mesh — orange pink purple"
+        },
+        {
+          "name": "Ocean Depth",
+          "bg": "#020617",
+          "gradients": [
+            "radial-gradient(ellipse at 0% 50%, rgba(6,182,212,0.35) 0%, transparent 55%)",
+            "radial-gradient(ellipse at 100% 30%, rgba(14,165,233,0.3) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 50% 100%, rgba(59,130,246,0.25) 0%, transparent 50%)"
+          ],
+          "text": "#FFFFFF",
+          "accent": "#06B6D4",
+          "note": "Deep ocean blues — tech, SaaS, AI product"
+        },
+        {
+          "name": "Light Mesh",
+          "bg": "#FFFFFF",
+          "gradients": [
+            "radial-gradient(ellipse at 0% 0%, rgba(167,139,250,0.15) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 100% 100%, rgba(6,182,212,0.12) 0%, transparent 50%)",
+            "radial-gradient(ellipse at 50% 50%, rgba(236,72,153,0.08) 0%, transparent 50%)"
+          ],
+          "text": "#111111",
+          "accent": "#7C3AED",
+          "note": "Subtle light mesh — clean but not plain"
+        }
+      ]
+    },
+
+    "editorial": {
+      "id": "editorial",
+      "name": "Editorial / Magazine",
+      "vibe": "Sophisticated, curated, typography-first, cultural",
+      "principles": [
+        "Typography IS the design — font choices are everything",
+        "Strong grid — columns, gutters, baseline grid",
+        "Pull quotes, large headlines, captions",
+        "Black and white with single spot color",
+        "Mix of serif and sans-serif in one layout",
+        "Rule lines, dividers, and grid guides as design elements",
+        "Photography with white space"
+      ],
+      "typography": {
+        "display": "Playfair Display, Bodoni Moda, DM Serif Display",
+        "body": "Source Serif 4, Lora, Merriweather",
+        "caption": "Barlow, DM Sans, Public Sans",
+        "weight_range": "300 body, 400-700-900 display"
+      },
+      "colorPalettes": [
+        {
+          "name": "Magazine Black",
+          "bg": "#FFFFFF",
+          "surface": "#F5F5F5",
+          "border": "#E0E0E0",
+          "text": "#0A0A0A",
+          "accent": "#E63946",
+          "note": "Classic editorial — white + red spot color"
+        },
+        {
+          "name": "Dark Editorial",
+          "bg": "#111111",
+          "surface": "#1A1A1A",
+          "border": "#333333",
+          "text": "#F5F5F5",
+          "accent": "#E63946",
+          "note": "Dark editorial magazine — white on black + red"
+        },
+        {
+          "name": "Ochre Editorial",
+          "bg": "#FAF5E4",
+          "surface": "#F5EDCC",
+          "border": "#D4C070",
+          "text": "#1A1200",
+          "accent": "#8B4513",
+          "note": "Warm editorial — literary, cultured, warm"
+        },
+        {
+          "name": "Ink Blue Editorial",
+          "bg": "#F0F4F8",
+          "surface": "#E0E8F0",
+          "border": "#B0C4D8",
+          "text": "#0A1828",
+          "accent": "#1E3A5F",
+          "note": "Ink blue — journalistic, trustworthy, news"
+        }
+      ]
+    },
+
+    "neumorphism": {
+      "id": "neumorphism",
+      "name": "Neumorphism / Soft UI",
+      "vibe": "Soft, tactile, 3D-like, modern skeuomorphic",
+      "principles": [
+        "Background, shadow, and element are near same color",
+        "Two shadows: dark (bottom-right) + light (top-left)",
+        "Creates illusion of elements pushed out or in",
+        "Works ONLY on light or medium surfaces, not dark",
+        "Never use pure white or black as base",
+        "Use for interactive elements: buttons, toggles, sliders"
+      ],
+      "css": {
+        "raised": "box-shadow: 6px 6px 12px rgba(0,0,0,0.15), -6px -6px 12px rgba(255,255,255,0.7);",
+        "inset": "box-shadow: inset 6px 6px 12px rgba(0,0,0,0.15), inset -6px -6px 12px rgba(255,255,255,0.7);",
+        "flat": "box-shadow: 3px 3px 6px rgba(0,0,0,0.12), -3px -3px 6px rgba(255,255,255,0.6);"
+      },
+      "colorPalettes": [
+        {
+          "name": "Neumorphic Grey",
+          "bg": "#E0E5EC",
+          "surface": "#E0E5EC",
+          "text": "#3A4060",
+          "accent": "#5B6CEF",
+          "shadow_dark": "rgba(163,177,198,0.6)",
+          "shadow_light": "rgba(255,255,255,0.8)",
+          "note": "Classic neumorphism — grey base, blue accent"
+        },
+        {
+          "name": "Neumorphic Warm",
+          "bg": "#F0ECE4",
+          "surface": "#F0ECE4",
+          "text": "#3A3028",
+          "accent": "#D4761A",
+          "shadow_dark": "rgba(196,184,166,0.6)",
+          "shadow_light": "rgba(255,255,255,0.8)",
+          "note": "Warm neumorphism — cream with orange accent"
+        }
+      ]
+    },
+
+    "y2k_retro_tech": {
+      "id": "y2k_retro_tech",
+      "name": "Y2K / Retro Tech",
+      "vibe": "Nostalgic 2000s tech, plasticky, shiny, optimistic",
+      "principles": [
+        "Chrome and metallic gradients",
+        "Translucent plastic UI elements (xp-style)",
+        "Saturated blue-silver palette",
+        "Bubble buttons with gloss highlights",
+        "Star decorations, rounded corners everywhere",
+        "Pixel fonts or early 2000s rounded sans"
+      ],
+      "typography": {
+        "display": "Audiowide, Exo 2, Rajdhani, Orbitron",
+        "body": "Outfit, Rubik, Nunito",
+        "weight_range": "400-700"
+      },
+      "colorPalettes": [
+        {
+          "name": "Windows XP Blue",
+          "bg": "#236DBD",
+          "surface": "linear-gradient(180deg, #5A9DE8 0%, #3A78D4 100%)",
+          "border": "#1A4E8C",
+          "text": "#FFFFFF",
+          "accent": "#FF6B00",
+          "note": "WinXP Luna — the iconic Microsoft blue"
+        },
+        {
+          "name": "iPod Chrome",
+          "bg": "#F0F0F0",
+          "surface": "linear-gradient(180deg, #FFFFFF, #D0D0D0)",
+          "border": "#B0B0B0",
+          "text": "#1A1A1A",
+          "accent": "#FF3B30",
+          "note": "iPod era — chrome white with red accent"
+        },
+        {
+          "name": "Y2K Teal Silver",
+          "bg": "#C8E8E8",
+          "surface": "linear-gradient(135deg, #A0D8D8, #80C0C8)",
+          "border": "#60A0A8",
+          "text": "#0A2028",
+          "accent": "#FF8C00",
+          "note": "2000s teal — AIM, early internet nostalgia"
+        }
+      ]
+    },
+
+    "earth_organic": {
+      "id": "earth_organic",
+      "name": "Earth / Organic / Natural",
+      "vibe": "Grounded, natural, sustainable, warm, authentic",
+      "principles": [
+        "Earthy browns, terracottas, sage greens, warm beiges",
+        "Natural textures: linen, paper, soil, stone",
+        "Organic shapes — no sharp corners",
+        "Photography of nature, plants, hands",
+        "Low saturation warm palette",
+        "Serif body fonts for warmth"
+      ],
+      "typography": {
+        "display": "Playfair Display, DM Serif Display, Lora",
+        "body": "Lora, Source Serif 4, Karla",
+        "weight_range": "300-600"
+      },
+      "colorPalettes": [
+        {
+          "name": "Terracotta",
+          "bg": "#FAF6EE",
+          "surface": "#F2EAD8",
+          "border": "#D8C8A8",
+          "text": "#2A1810",
+          "accent1": "#C2522A",
+          "accent2": "#8B6355",
+          "accent3": "#6B7C4A",
+          "note": "Terracotta and sage — pottery, artisan, wellness"
+        },
+        {
+          "name": "Forest Sage",
+          "bg": "#F2F5EE",
+          "surface": "#E4EAD8",
+          "border": "#C0CCA8",
+          "text": "#1A2210",
+          "accent1": "#5A7A40",
+          "accent2": "#8B6A30",
+          "accent3": "#C8A87A",
+          "note": "Forest sage — eco, organic, plant-based brand"
+        },
+        {
+          "name": "Desert Warm",
+          "bg": "#F8F0E4",
+          "surface": "#F0E4CC",
+          "border": "#D4C09A",
+          "text": "#2A1A08",
+          "accent1": "#CC7A3A",
+          "accent2": "#A85C28",
+          "accent3": "#8B8040",
+          "note": "Desert warm — Adobe, arid, sun-baked tones"
+        },
+        {
+          "name": "Clay & Bone",
+          "bg": "#EEE8DC",
+          "surface": "#E4DAC8",
+          "border": "#C8BCA0",
+          "text": "#28200C",
+          "accent1": "#8B4A2A",
+          "accent2": "#6A5040",
+          "note": "Clay and bone — ceramics, handmade, slow living"
+        }
+      ]
+    },
+
+    "sport_energy": {
+      "id": "sport_energy",
+      "name": "Sport / Energy / Athletic",
+      "vibe": "Powerful, fast, aggressive, motivational, bold",
+      "principles": [
+        "High contrast — dark bg with bright accent",
+        "Diagonal layouts and slanted design elements",
+        "Bold condensed display fonts",
+        "Action photography with motion blur",
+        "Bright acid greens, electric blues, hot oranges",
+        "Minimal UI — let the energy speak"
+      ],
+      "typography": {
+        "display": "Bebas Neue, Big Shoulders Display, Teko, Oswald",
+        "body": "Barlow, Rajdhani, Exo 2",
+        "weight_range": "600-900 display, 400-600 body"
+      },
+      "colorPalettes": [
+        {
+          "name": "Nike Black",
+          "bg": "#0A0A0A",
+          "surface": "#141414",
+          "border": "#222222",
+          "text": "#FFFFFF",
+          "accent": "#FFFFFF",
+          "note": "Nike-inspired — pure black + white, clean aggression"
+        },
+        {
+          "name": "Electric Volt",
+          "bg": "#0A0A0A",
+          "surface": "#111111",
+          "border": "#1A1A1A",
+          "text": "#FFFFFF",
+          "accent": "#CBFF4D",
+          "note": "Electric volt — acid green on black. Peak energy"
+        },
+        {
+          "name": "Adidas Bold",
+          "bg": "#FFFFFF",
+          "surface": "#F5F5F5",
+          "border": "#E0E0E0",
+          "text": "#000000",
+          "accent": "#FF0033",
+          "note": "Adidas-inspired — white + bold red accent"
+        },
+        {
+          "name": "Orange Power",
+          "bg": "#0A0A0A",
+          "surface": "#111111",
+          "border": "#201510",
+          "text": "#FFFFFF",
+          "accent": "#FF6200",
+          "note": "Orange power — aggressive, Fanta x Beats energy"
+        }
+      ]
+    },
+
+    "web3_crypto": {
+      "id": "web3_crypto",
+      "name": "Web3 / Crypto / DeFi",
+      "vibe": "Decentralized, bold, futuristic, trustless, digital-native",
+      "principles": [
+        "Dark backgrounds always",
+        "Gradient text effects common",
+        "Glassmorphism on cards",
+        "Bold geometric display fonts",
+        "Token/coin visual elements",
+        "Purple-blue-cyan color system",
+        "Stats, numbers, data-heavy UI"
+      ],
+      "typography": {
+        "display": "Unbounded, Syne, Outfit Bold, Space Grotesk",
+        "body": "Outfit, Manrope, Plus Jakarta Sans",
+        "mono": "JetBrains Mono, Space Mono",
+        "weight_range": "400-900"
+      },
+      "colorPalettes": [
+        {
+          "name": "ETH Purple",
+          "bg": "#0A0010",
+          "surface": "#13002A",
+          "surface2": "#1E0040",
+          "border": "#3D0080",
+          "text": "#F0E8FF",
+          "accent1": "#8B5CF6",
+          "accent2": "#A78BFA",
+          "gradient": "linear-gradient(135deg, #8B5CF6, #06B6D4)",
+          "note": "Ethereum-inspired — deep purple with violet glow"
+        },
+        {
+          "name": "BTC Orange",
+          "bg": "#0A0800",
+          "surface": "#1A1200",
+          "border": "#3A2800",
+          "text": "#FFF8E8",
+          "accent1": "#F7931A",
+          "accent2": "#FFB84D",
+          "gradient": "linear-gradient(135deg, #F7931A, #FF6B00)",
+          "note": "Bitcoin orange — digital gold on dark"
+        },
+        {
+          "name": "DeFi Cyan",
+          "bg": "#020817",
+          "surface": "#0D1B2A",
+          "border": "#1A3050",
+          "text": "#E0F4FF",
+          "accent1": "#00D4FF",
+          "accent2": "#0066FF",
+          "gradient": "linear-gradient(135deg, #00D4FF, #0066FF)",
+          "note": "DeFi cyan-blue — clean, protocol, liquid"
+        },
+        {
+          "name": "NFT Rainbow",
+          "bg": "#0A0A0F",
+          "surface": "#111118",
+          "border": "#222228",
+          "text": "#FFFFFF",
+          "gradient": "linear-gradient(135deg, #FF6EC7, #A78BFA, #00D4FF, #39FF14)",
+          "accent1": "#FF6EC7",
+          "accent2": "#A78BFA",
+          "accent3": "#00D4FF",
+          "note": "NFT rainbow — all colors, all vibes"
+        }
+      ]
+    },
+
+    "saas_product": {
+      "id": "saas_product",
+      "name": "SaaS / Product UI",
+      "vibe": "Clean, functional, trustworthy, efficient, modern",
+      "principles": [
+        "Clean grid layout — no surprises",
+        "Sidebar navigation + main content area",
+        "Clear typographic hierarchy for data",
+        "Charts and data viz elements",
+        "Consistent spacing and component library",
+        "Accessible colors with 4.5:1 minimum contrast",
+        "Both light and dark mode mandatory"
+      ],
+      "typography": {
+        "display": "Plus Jakarta Sans, Epilogue, Urbanist",
+        "body": "Inter, DM Sans, Manrope",
+        "mono": "JetBrains Mono, Fira Code",
+        "weight_range": "300-700"
+      },
+      "colorPalettes": [
+        {
+          "name": "Vercel Dark",
+          "bg": "#000000",
+          "surface": "#111111",
+          "surface2": "#1A1A1A",
+          "border": "#282828",
+          "text": "#EDEDED",
+          "text2": "#888888",
+          "accent": "#FFFFFF",
+          "note": "Vercel — pure black, white accent, no distractions"
+        },
+        {
+          "name": "Linear Indigo",
+          "bg": "#08090C",
+          "surface": "#12131A",
+          "surface2": "#1C1D28",
+          "border": "#2C2E42",
+          "text": "#F0F2FF",
+          "text2": "#8890C0",
+          "accent": "#5E6AD2",
+          "note": "Linear.app — indigo blue, super clean dashboard"
+        },
+        {
+          "name": "Stripe Blue",
+          "bg": "#0A2540",
+          "surface": "#122C50",
+          "border": "#1D3D68",
+          "text": "#FFFFFF",
+          "text2": "#8898AA",
+          "accent": "#635BFF",
+          "note": "Stripe-inspired — classic deep navy + purple"
+        },
+        {
+          "name": "Figma Purple",
+          "bg": "#1E1E1E",
+          "surface": "#2C2C2C",
+          "surface2": "#383838",
+          "border": "#4A4A4A",
+          "text": "#FFFFFF",
+          "text2": "#999999",
+          "accent": "#A259FF",
+          "note": "Figma dark — purple brand on dark canvas"
+        },
+        {
+          "name": "Notion Clean",
+          "bg": "#FFFFFF",
+          "surface": "#F7F7F5",
+          "surface2": "#EFEEEB",
+          "border": "#E3E2E0",
+          "text": "#191919",
+          "text2": "#737373",
+          "accent": "#2383E2",
+          "note": "Notion light — ultra clean, no clutter"
+        }
+      ]
+    },
+
+    "fashion_lifestyle": {
+      "id": "fashion_lifestyle",
+      "name": "Fashion / Lifestyle / Beauty",
+      "vibe": "Aspirational, curated, soft, elegant, trend-led",
+      "principles": [
+        "Photography-forward design",
+        "Maximum whitespace",
+        "Serif display fonts for editorial feel",
+        "Muted feminine palette OR striking monochrome",
+        "Product is the star — UI is minimal",
+        "Subtle animations — hover reveals, slow fades",
+        "Overlapping elements for depth"
+      ],
+      "typography": {
+        "display": "Playfair Display, Cormorant Garamond, Bodoni Moda",
+        "body": "DM Sans, Karla, Raleway Light",
+        "accent": "Sacramento, Dancing Script (sparingly)",
+        "weight_range": "300 body, 700-900 display"
+      },
+      "colorPalettes": [
+        {
+          "name": "Blush & Cream",
+          "bg": "#FEF9F7",
+          "surface": "#FCF1EC",
+          "border": "#EDD5C8",
+          "text": "#2A1818",
+          "accent1": "#E07B6A",
+          "accent2": "#C85A48",
+          "note": "Blush pink — feminine beauty, skincare, lifestyle"
+        },
+        {
+          "name": "All Black Fashion",
+          "bg": "#0A0A0A",
+          "surface": "#111111",
+          "border": "#222222",
+          "text": "#FFFFFF",
+          "accent": "#FFFFFF",
+          "note": "High fashion mono — Yeezy/ZARA minimal dark"
+        },
+        {
+          "name": "Dusty Rose",
+          "bg": "#FDF5F3",
+          "surface": "#F5E8E4",
+          "border": "#E0C8C0",
+          "text": "#2A1820",
+          "accent1": "#C07888",
+          "accent2": "#8B5868",
+          "note": "Dusty rose — bridal, boutique, feminine luxury"
+        },
+        {
+          "name": "Sage & Linen",
+          "bg": "#F5F4EE",
+          "surface": "#ECEBE0",
+          "border": "#D0CEC0",
+          "text": "#1E2010",
+          "accent1": "#7A8A5A",
+          "accent2": "#5A6A40",
+          "note": "Sage and linen — sustainable fashion, earth tones"
+        },
+        {
+          "name": "Noir Couture",
+          "bg": "#F8F8F8",
+          "surface": "#F0F0F0",
+          "border": "#D8D8D8",
+          "text": "#0A0A0A",
+          "accent": "#0A0A0A",
+          "note": "Noir couture — ultra minimal monochrome fashion"
+        }
+      ]
+    },
+
+    "gaming_esports": {
+      "id": "gaming_esports",
+      "name": "Gaming / Esports",
+      "vibe": "Intense, competitive, dark, electric, team-branded",
+      "principles": [
+        "Very dark or pure black backgrounds",
+        "Electric accent colors — RGB-coded",
+        "Angular and diagonal design elements",
+        "Particle effects, glows, energy bursts",
+        "Team logos and mascots as central design",
+        "Hexagonal or geometric patterns",
+        "Dense information hierarchy for stats"
+      ],
+      "typography": {
+        "display": "Rajdhani, Teko, Bebas Neue, Orbitron, Exo 2",
+        "body": "Barlow, Exo 2, Rajdhani",
+        "weight_range": "600-900 display"
+      },
+      "colorPalettes": [
+        {
+          "name": "RGB Gaming",
+          "bg": "#050505",
+          "surface": "#0D0D0D",
+          "border": "#1A1A1A",
+          "text": "#FFFFFF",
+          "accent1": "#FF0066",
+          "accent2": "#00FF99",
+          "accent3": "#0066FF",
+          "note": "RGB gaming — full spectrum on black"
+        },
+        {
+          "name": "Team Neon",
+          "bg": "#0A0010",
+          "surface": "#120018",
+          "border": "#240030",
+          "text": "#FFFFFF",
+          "accent1": "#9D00FF",
+          "accent2": "#00FFCC",
+          "note": "Esports purple teal — pro team aesthetic"
+        },
+        {
+          "name": "Tactical Green",
+          "bg": "#050A05",
+          "surface": "#0A140A",
+          "border": "#142014",
+          "text": "#E0FFE0",
+          "accent1": "#39FF14",
+          "accent2": "#00CC44",
+          "note": "Tactical military green — FPS, battle royale"
+        }
+      ]
+    },
+
+    "food_restaurant": {
+      "id": "food_restaurant",
+      "name": "Food / Restaurant",
+      "vibe": "Appetizing, warm, inviting, cultural, delicious",
+      "principles": [
+        "Warm colors stimulate appetite (red, orange, yellow)",
+        "Food photography is hero content",
+        "Handwritten/script fonts for personality",
+        "Menus with clear typographic hierarchy",
+        "Cultural palette matches cuisine origin",
+        "Dark upscale or light casual based on price point"
+      ],
+      "colorPalettes": [
+        {
+          "name": "Italian Bistro",
+          "bg": "#1A0A00",
+          "surface": "#2A1400",
+          "border": "#4A2800",
+          "text": "#FFF5E0",
+          "accent1": "#CC3300",
+          "accent2": "#D4A020",
+          "note": "Italian red and gold — pasta, wine, tradition"
+        },
+        {
+          "name": "Fresh Cafe",
+          "bg": "#F8FBF5",
+          "surface": "#EFF5E8",
+          "border": "#D0E0C0",
+          "text": "#1A2A10",
+          "accent1": "#5A8040",
+          "accent2": "#8B5E3C",
+          "note": "Fresh cafe — salads, smoothies, health food"
+        },
+        {
+          "name": "Spice Market",
+          "bg": "#1A0800",
+          "surface": "#280E00",
+          "border": "#4A1E00",
+          "text": "#FFE8D0",
+          "accent1": "#FF6600",
+          "accent2": "#CC3300",
+          "accent3": "#FFAA00",
+          "note": "Spice market — Indian, Middle Eastern, bold warm"
+        },
+        {
+          "name": "Sushi Minimal",
+          "bg": "#FFFFFF",
+          "surface": "#F8F8F8",
+          "border": "#E8E0D8",
+          "text": "#1A1010",
+          "accent1": "#CC0000",
+          "accent2": "#1A1A1A",
+          "note": "Japanese minimal — white + red, clean precision"
+        }
+      ]
+    }
+  },
+
+  "gradients": {
+
+    "linear": [
+      { "name": "Violet Dusk", "value": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", "vibe": "creative, dreamy" },
+      { "name": "Ocean Breeze", "value": "linear-gradient(135deg, #0093E9 0%, #80D0C7 100%)", "vibe": "fresh, clean, ocean" },
+      { "name": "Sunset Fire", "value": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)", "vibe": "romantic, dramatic, energy" },
+      { "name": "Citrus Pop", "value": "linear-gradient(135deg, #FA8231 0%, #F7B731 100%)", "vibe": "vibrant, warm, energetic" },
+      { "name": "Midnight Run", "value": "linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%)", "vibe": "dark, deep, serious" },
+      { "name": "Cotton Candy", "value": "linear-gradient(135deg, #FDDB92 0%, #D1FDFF 100%)", "vibe": "soft, pastel, playful" },
+      { "name": "Neon Pulse", "value": "linear-gradient(135deg, #FF00FF 0%, #00FFFF 100%)", "vibe": "cyber, neon, electric" },
+      { "name": "Forest Path", "value": "linear-gradient(135deg, #134E5E 0%, #71B280 100%)", "vibe": "natural, earthy, calm" },
+      { "name": "Royal Flush", "value": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)", "vibe": "royal, dark blue, prestige" },
+      { "name": "Gold Rush", "value": "linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #B8860B 100%)", "vibe": "luxury, metallic, premium" },
+      { "name": "Rose Gold", "value": "linear-gradient(135deg, #B76E79 0%, #E8B4B8 50%, #B76E79 100%)", "vibe": "feminine, luxury, rose gold" },
+      { "name": "Electric Lime", "value": "linear-gradient(135deg, #39FF14 0%, #00BFFF 100%)", "vibe": "energetic, electric, gaming" },
+      { "name": "Aurora", "value": "linear-gradient(135deg, #00B4DB 0%, #0083B0 100%)", "vibe": "serene, nordic, calm" },
+      { "name": "Coral Reef", "value": "linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%)", "vibe": "warm, tropical, summer" },
+      { "name": "Cosmic Latte", "value": "linear-gradient(135deg, #232526 0%, #414345 100%)", "vibe": "dark, neutral, serious" },
+      { "name": "Deep Sea", "value": "linear-gradient(135deg, #052444 0%, #0a3d62 50%, #1e6091 100%)", "vibe": "ocean depth, corporate, finance" },
+      { "name": "Lavender Mist", "value": "linear-gradient(135deg, #E8D5F5 0%, #D5C8F0 50%, #C8D5F5 100%)", "vibe": "soft, pastel, wellness" },
+      { "name": "Volcano", "value": "linear-gradient(135deg, #1f0000 0%, #8B0000 50%, #FF4500 100%)", "vibe": "intense, dark, dramatic" },
+      { "name": "Midnight City", "value": "linear-gradient(135deg, #232526 0%, #414345 100%)", "vibe": "urban, sophisticated, night" },
+      { "name": "Bubblegum", "value": "linear-gradient(135deg, #FF9A9E 0%, #FAD0C4 50%, #FFD1FF 100%)", "vibe": "cute, feminine, playful" }
+    ],
+
+    "text_gradients": [
+      { "name": "Aurora Text", "value": "linear-gradient(135deg, #8B5CF6, #06B6D4, #10B981)", "css": "background: linear-gradient(135deg, #8B5CF6, #06B6D4, #10B981); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" },
+      { "name": "Sunset Text", "value": "linear-gradient(135deg, #F59E0B, #EF4444, #EC4899)", "css": "background: linear-gradient(135deg, #F59E0B, #EF4444, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" },
+      { "name": "Gold Text", "value": "linear-gradient(135deg, #B8860B, #FFD700, #B8860B)", "css": "background: linear-gradient(135deg, #B8860B, #FFD700, #B8860B); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" },
+      { "name": "Cyber Text", "value": "linear-gradient(135deg, #FF00FF, #00FFFF)", "css": "background: linear-gradient(135deg, #FF00FF, #00FFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" },
+      { "name": "White Glow Text", "value": "linear-gradient(135deg, #FFFFFF, #C0C0C0, #FFFFFF)", "css": "background: linear-gradient(135deg, #FFFFFF, #C0C0C0, #FFFFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" },
+      { "name": "Rainbow Text", "value": "linear-gradient(135deg, #FF6EC7, #A78BFA, #00D4FF, #39FF14, #FFB347)", "css": "background: linear-gradient(135deg, #FF6EC7, #A78BFA, #00D4FF, #39FF14, #FFB347); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" }
+    ],
+
+    "conic": [
+      { "name": "Rainbow Cone", "value": "conic-gradient(from 0deg, #FF6EC7, #A78BFA, #00D4FF, #39FF14, #FFB347, #FF6EC7)" },
+      { "name": "Color Wheel", "value": "conic-gradient(red, yellow, lime, aqua, blue, magenta, red)" },
+      { "name": "Dark Neon Cone", "value": "conic-gradient(from 180deg, #FF00FF, #00FFFF, #FF00FF)" }
+    ]
+  },
+
+  "colorCombos": {
+
+    "twoColor": [
+      { "name": "Black + Gold", "hex": ["#0A0A0A", "#D4AF37"], "vibe": "luxury, premium, exclusive" },
+      { "name": "Black + White", "hex": ["#0A0A0A", "#FFFFFF"], "vibe": "minimal, editorial, timeless" },
+      { "name": "Navy + Gold", "hex": ["#0D1B2A", "#D4AF37"], "vibe": "prestige, nautical, classic" },
+      { "name": "Black + Electric Lime", "hex": ["#0A0A0A", "#CBFF4D"], "vibe": "sport, energy, streetwear" },
+      { "name": "Purple + Cyan", "hex": ["#8B5CF6", "#06B6D4"], "vibe": "tech, AI, futuristic" },
+      { "name": "Pink + Black", "hex": ["#FF6EC7", "#0A0A0A"], "vibe": "bold, fashion, playful" },
+      { "name": "Orange + Navy", "hex": ["#F97316", "#1E3A5F"], "vibe": "creative, energetic, contrast" },
+      { "name": "Red + White", "hex": ["#CC0000", "#FFFFFF"], "vibe": "urgency, food, bold" },
+      { "name": "Forest + Cream", "hex": ["#2D6A4F", "#FFF8E7"], "vibe": "natural, organic, warm" },
+      { "name": "Terracotta + Sand", "hex": ["#C2522A", "#F5EBD0"], "vibe": "earthy, artisan, craft" },
+      { "name": "Deep Blue + Orange", "hex": ["#0A1628", "#FF6200"], "vibe": "sport, tech, dynamic" },
+      { "name": "Midnight + Rose Gold", "hex": ["#1A1A2E", "#B76E79"], "vibe": "luxury, feminine, mystique" }
+    ],
+
+    "threeColor": [
+      { "name": "Neon Trifecta", "hex": ["#FF00FF", "#00FFFF", "#FFFF00"], "vibe": "cyberpunk, electric, rave" },
+      { "name": "Sunset Trio", "hex": ["#FF6B6B", "#FFE66D", "#1A1A2E"], "vibe": "sunset, warm, vibrant" },
+      { "name": "Forest Walk", "hex": ["#2D6A4F", "#95D5B2", "#F5EBD0"], "vibe": "nature, calming, organic" },
+      { "name": "Brand Trio", "hex": ["#0A0A0A", "#FFFFFF", "#8B5CF6"], "vibe": "tech brand, professional, modern" },
+      { "name": "Warm Editorial", "hex": ["#FAF7F2", "#C2410C", "#1C1917"], "vibe": "editorial, magazine, warm" },
+      { "name": "Ocean Depth", "hex": ["#0A1628", "#0EA5E9", "#FFFFFF"], "vibe": "tech, ocean, clean" },
+      { "name": "Earth Tone Trio", "hex": ["#F5EBD0", "#8B6355", "#2A1810"], "vibe": "earthy, artisan, authentic" },
+      { "name": "Cyber Trio", "hex": ["#0A0010", "#8B5CF6", "#00FFCC"], "vibe": "web3, futuristic, digital" },
+      { "name": "Rose Quartz Set", "hex": ["#F7CAC9", "#92A8D1", "#FFFFFF"], "vibe": "Pantone COTY, soft, wellness" },
+      { "name": "Dark Mode Trio", "hex": ["#09090B", "#27272A", "#8B5CF6"], "vibe": "dark UI, product, SaaS" }
+    ],
+
+    "fourColor": [
+      { "name": "Stripe Palette", "hex": ["#0A2540", "#635BFF", "#00D4C8", "#FFFFFF"], "vibe": "payments, fintech, clean" },
+      { "name": "Figma Palette", "hex": ["#FF7262", "#A259FF", "#1ABCFE", "#0ACF83"], "vibe": "design tool, modern, multicolor" },
+      { "name": "Neon Quad", "hex": ["#0A0A0A", "#FF00FF", "#00FFFF", "#FFFF00"], "vibe": "rave, electric, full spectrum" },
+      { "name": "Earthy Four", "hex": ["#F5EBD0", "#C2522A", "#6B7C4A", "#1A1200"], "vibe": "artisan, natural, warm brand" },
+      { "name": "SaaS System", "hex": ["#FFFFFF", "#F5F5F5", "#5E6AD2", "#0A0A14"], "vibe": "product, dashboard, clean" }
+    ],
+
+    "monochromaticSets": [
+      {
+        "name": "Violet Scale",
+        "shades": ["#f5f3ff", "#ede9fe", "#ddd6fe", "#c4b5fd", "#a78bfa", "#8b5cf6", "#7c3aed", "#6d28d9", "#5b21b6", "#4c1d95"],
+        "usage": "Use lightest for bg, mid for accents, darkest for text on light"
+      },
+      {
+        "name": "Cyan Scale",
+        "shades": ["#ecfeff", "#cffafe", "#a5f3fc", "#67e8f9", "#22d3ee", "#06b6d4", "#0891b2", "#0e7490", "#155e75", "#164e63"],
+        "usage": "Tech, ocean, fresh UI"
+      },
+      {
+        "name": "Rose Scale",
+        "shades": ["#fff1f2", "#ffe4e6", "#fecdd3", "#fda4af", "#fb7185", "#f43f5e", "#e11d48", "#be123c", "#9f1239", "#881337"],
+        "usage": "Fashion, beauty, luxury"
+      },
+      {
+        "name": "Emerald Scale",
+        "shades": ["#ecfdf5", "#d1fae5", "#a7f3d0", "#6ee7b7", "#34d399", "#10b981", "#059669", "#047857", "#065f46", "#064e3b"],
+        "usage": "Nature, health, sustainability"
+      },
+      {
+        "name": "Amber Scale",
+        "shades": ["#fffbeb", "#fef3c7", "#fde68a", "#fcd34d", "#fbbf24", "#f59e0b", "#d97706", "#b45309", "#92400e", "#78350f"],
+        "usage": "Warning, energy, gold, food"
+      },
+      {
+        "name": "Slate Scale",
+        "shades": ["#f8fafc", "#f1f5f9", "#e2e8f0", "#cbd5e1", "#94a3b8", "#64748b", "#475569", "#334155", "#1e293b", "#0f172a"],
+        "usage": "Dark UI, neutral, professional"
+      }
+    ]
+  },
+
+  "moodBoards": {
+    "darkLuxury": {
+      "colors": ["#0C0C0C", "#141414", "#2A2A2A", "#D4AF37", "#F5F0E8", "#888888"],
+      "fonts": ["Playfair Display", "Cormorant Garamond", "DM Sans Light"],
+      "textures": ["subtle grain", "noise overlay", "dark marble"],
+      "animations": ["slow fades", "mask reveals", "parallax"],
+      "designStyle": "luxury"
+    },
+    "techStartup": {
+      "colors": ["#09090B", "#111113", "#27272A", "#8B5CF6", "#06B6D4", "#FAFAFA"],
+      "fonts": ["Syne", "Manrope", "JetBrains Mono"],
+      "textures": ["gradient mesh", "dot grid", "glassmorphism"],
+      "animations": ["blur reveals", "stagger fades", "spring physics"],
+      "designStyle": "dark_mode"
+    },
+    "creativeAgency": {
+      "colors": ["#0A0A0A", "#CBFF4D", "#FFFFFF", "#1A1A1A"],
+      "fonts": ["Bebas Neue", "Archivo Black", "DM Sans"],
+      "textures": ["hard shadows", "raw borders", "offset elements"],
+      "animations": ["clip reveals", "aggressive slides", "elastic spring"],
+      "designStyle": "brutalism"
+    },
+    "organicBrand": {
+      "colors": ["#FAF6EE", "#F2EAD8", "#D8C8A8", "#C2522A", "#6B7C4A", "#2A1810"],
+      "fonts": ["Lora", "Playfair Display", "Karla"],
+      "textures": ["linen", "paper grain", "watercolor"],
+      "animations": ["soft fades", "slow reveals", "gentle parallax"],
+      "designStyle": "earth_organic"
+    }
+  },
+
+  "usageGuide": {
+    "howToPickDesignStyle": "Match the brand's personality first. Then match to industry norms. Then break them intentionally for differentiation.",
+    "colorPickingProcess": [
+      "1. Identify the vibe and emotion the design should evoke",
+      "2. Choose warm (energy/appetite) vs cool (trust/calm) vs neutral (luxury/minimal)",
+      "3. Pick a harmony type (complementary for contrast, analogous for harmony, monochromatic for sophistication)",
+      "4. Apply 60-30-10 rule to assign color weights",
+      "5. Check WCAG contrast ratios — minimum 4.5:1 for body text",
+      "6. Test in both light and dark mode",
+      "7. Check how it looks for color blind users (deuteranopia, protanopia)"
+    ],
+    "gradientUsageRules": [
+      "Use linear gradients for backgrounds, borders, text effects",
+      "Use radial gradients for glow effects and spotlight effects",
+      "Use conic gradients for color wheels, pie charts, decorative elements",
+      "Gradient text: always test contrast carefully — often hard to read",
+      "Max 3 colors in a gradient for readability",
+      "Angle matters: 135deg is most natural, 0deg/90deg feel rigid"
+    ],
+    "contrastChecker": "https://webaim.org/resources/contrastchecker/",
+    "colorTools": ["Coolors.co", "Realtime Colors", "Huemint", "Colorsinspo", "Khroma AI", "Paletton", "Adobe Color"],
+    "greatdeskNote": "Greatdesk is Rhiley's signature custom font. Load it from /public/fonts/ and it pairs beautifully with any sans or serif in this dataset."
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "x/z-image-turbo:latest",
+    "object": "model",
+    "created": 1771926847,
+    "owned_by": "x"
+  },
+  {
+    "id": "qwen3:8b",
+    "object": "model",
+    "created": 1771222105,
+    "owned_by": "library"
+  },
+  {
+    "id": "qwen2.5-coder:7b",
+    "object": "model",
+    "created": 1771221015,
+    "owned_by": "library"
+  },
+  {
+    "id": "deepseek-coder:6.7b",
+    "object": "model",
+    "created": 1770359069,
+    "owned_by": "library"
+  },
+  {
+    "id": "llava:7b",
+    "object": "model",
+    "created": 1769063114,
+    "owned_by": "library"
+  },
+  {
+    "id": "llama3:8b",
+    "object": "model",
+    "created": 1769062991,
+    "owned_by": "library"
+  },
+  {
+    "id": "mxbai-embed-large:latest",
+    "object": "model",
+    "created": 1756115979,
+    "owned_by": "library"
+  }
+]
