@@ -1,0 +1,8 @@
+﻿OK  [200] health | {"status":"ok","service":"design-engine"}
+OK  [400] generate | {"success":false,"error":"Blueprint missing 'type' field"}
+OK  [400] compile (no body) | {"success":false,"error":"No blueprint provided"}
+OK  [400] compile3d (no body) | {"success":false,"error":"No blueprint provided"}
+OK  [400] compileTemplate (no body) | {"success":false,"error":"No blueprint provided"}
+OK  [400] copilot (no body) | {"success":false,"error":"Code and language required."}
+OK  [400] generateTitle (too short) | {"success":false,"error":"Insufficient chat history provided"}
+OK  [400] chat (empty) | {"success":false,"error":"Message cannot be empty"}
