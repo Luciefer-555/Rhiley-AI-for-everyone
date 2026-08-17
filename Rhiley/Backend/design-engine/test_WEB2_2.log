@@ -1,0 +1,63 @@
+◇ injected env (2) from ..\..\.env // tip: ⌘ enable debugging { debug: true }
+=== Rhiley Full Pipeline Test ===
+
+[1] User provided image: test-images\WEB2.png
+
+[1.5] Routing Intent...
+✅ Router determined route: "image_only"
+
+[2] Generating Image Blueprint via Vision Model...
+✅ Image Blueprint generated successfully:
+ {
+  "layout": "vertical",
+  "designStyle": "minimalist, high contrast",
+  "colorPalette": [
+    "#000000",
+    "#ffffff",
+    "#808080"
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "source": "visually_inferred",
+      "content": {
+        "title": "lowtheory",
+        "title_source": "ocr_read",
+        "subtitle": "BRANDING & UI/UX DESIGN LOWTHEORY®",
+        "subtitle_source": "ocr_read"
+      }
+    }
+  ]
+} 
+
+[3] Template Selection & Mapping...
+✅ Selected Template: 3d-engineer-portfolio (from batch 1)
+✅ Mapped 1 sections to template slots.
+
+[4] Compiling TSX Code via NIM...
+[nimCompiler] Sending prompt to NIM...
+[nimCompiler] Compilation successful, output length: 763
+✅ Code compiled successfully. Validating...
+
+[5] Scaffolding Next.js Project...
+✅ Wrote generated code to test-output/app/page.tsx
+✅ Project scaffolded successfully in /test-output.
+
+--- GENERATED HERO SECTION CODE (First 30 lines) ---
+import { motion } from "framer-motion"
+import { designTokens, motionPresets } from "@/ui-lib/designSystem"
+
+export default function Hero() {
+  return (
+    <section id="hero" style={{ padding: designTokens.spacing.section, backgroundColor: designTokens.palettes.cinematicDark.background, color: designTokens.palettes.cinematicDark.foreground }}>
+      <motion.div style={{ padding: designTokens.spacing.container }} {...motionPresets.staggerRise.container}>
+        <motion.h1 variants={motionPresets.staggerRise.item}>Hero Title</motion.h1>
+        <motion.p variants={motionPresets.staggerRise.item}>Hero Description</motion.p>
+        <motion.button variants={motionPresets.staggerRise.item}>Get Started</motion.button>
+      </motion.div>
+    </section>
+  )
+}
+...
+
+Pipeline test complete.

@@ -1,0 +1,5 @@
+{
+    "model": "x/z-image-turbo:latest",
+    "prompt": "a simple app icon, 8k ultra detailed",
+    "stream": false
+}

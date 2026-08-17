@@ -1,0 +1,938 @@
+{
+  "meta": {
+    "name": "Rhiley's Ultimate Framer Motion + Font Dataset",
+    "version": "1.0.0",
+    "description": "Complete dataset of Framer Motion animation presets, font families, transitions, hooks, and design tokens for production-ready UI builds.",
+    "author": "Rhiley — Senior Frontend AI",
+    "customFont": "Greatdesk"
+  },
+
+  "fonts": {
+    "googleImportUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300&family=DM+Serif+Display:ital@0;1&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Big+Shoulders+Display:wght@400;700;900&family=Bebas+Neue&family=Oswald:wght@300;400;600&family=Rajdhani:wght@400;600;700&family=Syne:wght@400;700;800&family=Unbounded:wght@400;700;900&family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&family=Manrope:wght@400;600;700&family=Dancing+Script:wght@400;700&family=Sacramento&family=Bungee&family=Rubik+Glitch&family=Rubik+Dirt&family=Press+Start+2P&family=VT323&family=Pixelify+Sans:wght@400;700&family=Urbanist:wght@300;400;600;700;900&family=Lora:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Turret+Road:wght@400;700&family=Audiowide&family=Exo+2:wght@300;400;600;700&family=Sixtyfour&family=Archivo+Black&family=Raleway:wght@300;400;700;900&family=Poppins:wght@300;400;600;700&family=Jost:wght@300;400;600;700&family=Karla:wght@300;400;700&family=Figtree:wght@300;400;600;700&family=Epilogue:wght@300;400;700;900&family=Sora:wght@300;400;600;700&family=Public+Sans:wght@300;400;600;700&display=swap",
+
+    "custom": {
+      "Greatdesk": {
+        "weights": ["400"],
+        "styles": ["normal", "italic"],
+        "files": {
+          "regular_otf": "/fonts/Greatdesk-Regular.otf",
+          "regular_ttf": "/fonts/Greatdesk-Regular.ttf",
+          "italic_otf": "/fonts/Greatdesk-Italic.otf",
+          "italic_ttf": "/fonts/Greatdesk-Italic.ttf"
+        },
+        "fontFace": "@font-face { font-family: 'Greatdesk'; src: url('/fonts/Greatdesk-Regular.otf') format('opentype'), url('/fonts/Greatdesk-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; } @font-face { font-family: 'Greatdesk'; src: url('/fonts/Greatdesk-Italic.otf') format('opentype'), url('/fonts/Greatdesk-Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }"
+      }
+    },
+
+    "categories": {
+      "display": [
+        { "name": "Playfair Display", "stack": "'Playfair Display', Georgia, serif", "weights": [400, 700, 900], "style": "editorial serif", "vibe": "luxury, editorial, high fashion" },
+        { "name": "Cormorant Garamond", "stack": "'Cormorant Garamond', Palatino, serif", "weights": [300, 500, 700], "style": "refined serif", "vibe": "elegant, minimal luxury, fine dining" },
+        { "name": "Bodoni Moda", "stack": "'Bodoni Moda', 'Book Antiqua', serif", "weights": [400, 700], "style": "classic serif", "vibe": "magazine, bold editorial" },
+        { "name": "DM Serif Display", "stack": "'DM Serif Display', Times, serif", "weights": [400], "style": "modern serif", "vibe": "editorial, classy" },
+        { "name": "Spectral", "stack": "'Spectral', Georgia, serif", "weights": [300, 400, 700], "style": "refined serif", "vibe": "literary, newspaper" },
+        { "name": "Big Shoulders Display", "stack": "'Big Shoulders Display', Impact, sans-serif", "weights": [400, 700, 900], "style": "condensed sans", "vibe": "industrial, powerful, bold" },
+        { "name": "Bebas Neue", "stack": "'Bebas Neue', Impact, sans-serif", "weights": [400], "style": "condensed display", "vibe": "streetwear, sport, gym, brand" },
+        { "name": "Oswald", "stack": "'Oswald', sans-serif", "weights": [300, 400, 600], "style": "condensed sans", "vibe": "newspaper, bold, modern" },
+        { "name": "Rajdhani", "stack": "'Rajdhani', sans-serif", "weights": [400, 600, 700], "style": "geometric sans", "vibe": "tech, sci-fi, futuristic" },
+        { "name": "Syne", "stack": "'Syne', sans-serif", "weights": [400, 700, 800], "style": "experimental sans", "vibe": "creative agency, portfolio, art" },
+        { "name": "Unbounded", "stack": "'Unbounded', sans-serif", "weights": [400, 700, 900], "style": "geometric bold", "vibe": "web3, crypto, bold brand" },
+        { "name": "Orbitron", "stack": "'Orbitron', monospace", "weights": [400, 700, 900], "style": "tech display", "vibe": "sci-fi, gaming, neon" },
+        { "name": "Archivo Black", "stack": "'Archivo Black', sans-serif", "weights": [900], "style": "bold grotesque", "vibe": "startup, modern, punchy" },
+        { "name": "Audiowide", "stack": "'Audiowide', monospace", "weights": [400], "style": "tech display", "vibe": "dashboard, techno, cyber" },
+        { "name": "Turret Road", "stack": "'Turret Road', sans-serif", "weights": [400, 700], "style": "industrial tech", "vibe": "military tech, rugged, cyber" },
+        { "name": "Exo 2", "stack": "'Exo 2', sans-serif", "weights": [300, 400, 600, 700], "style": "sci-fi geometric", "vibe": "gaming, tech, space" },
+        { "name": "Teko", "stack": "'Teko', sans-serif", "weights": [300, 400, 600, 700], "style": "condensed devanagari inspired", "vibe": "bold UI, stats, HUD" },
+        { "name": "Raleway", "stack": "'Raleway', sans-serif", "weights": [300, 400, 700, 900], "style": "elegant sans", "vibe": "wedding, fashion, portfolio" },
+        { "name": "Bungee", "stack": "'Bungee', sans-serif", "weights": [400], "style": "signage display", "vibe": "retro, street signage, fun" },
+        { "name": "Righteous", "stack": "'Righteous', cursive", "weights": [400], "style": "retro display", "vibe": "vintage, 70s, bold fun" },
+        { "name": "Sixtyfour", "stack": "'Sixtyfour', monospace", "weights": [400], "style": "pixel retro", "vibe": "retro, vintage computer" },
+        { "name": "Poppins", "stack": "'Poppins', sans-serif", "weights": [300, 400, 600, 700], "style": "geometric sans", "vibe": "clean, startup, app UI" },
+        { "name": "Urbanist", "stack": "'Urbanist', sans-serif", "weights": [300, 400, 600, 700, 900], "style": "modern geometric", "vibe": "fintech, clean, modern app" },
+        { "name": "Epilogue", "stack": "'Epilogue', sans-serif", "weights": [300, 400, 700, 900], "style": "editorial sans", "vibe": "bold editorial, magazine" },
+        { "name": "Jost", "stack": "'Jost', sans-serif", "weights": [300, 400, 600, 700], "style": "humanist sans", "vibe": "clean SaaS, readable" }
+      ],
+
+      "body": [
+        { "name": "DM Sans", "stack": "'DM Sans', sans-serif", "weights": [300, 400, 500, 700], "style": "humanist sans", "vibe": "apps, startups, product UI" },
+        { "name": "Plus Jakarta Sans", "stack": "'Plus Jakarta Sans', sans-serif", "weights": [300, 400, 600, 700], "style": "modern humanist", "vibe": "fintech, dashboards, SaaS" },
+        { "name": "Manrope", "stack": "'Manrope', sans-serif", "weights": [400, 600, 700], "style": "geometric sans", "vibe": "product, clean, modern" },
+        { "name": "Outfit", "stack": "'Outfit', sans-serif", "weights": [300, 400, 600, 700], "style": "clean geometric", "vibe": "apps, web3, clean UI" },
+        { "name": "Figtree", "stack": "'Figtree', sans-serif", "weights": [300, 400, 600, 700], "style": "rounded sans", "vibe": "friendly, app, readable" },
+        { "name": "Karla", "stack": "'Karla', sans-serif", "weights": [300, 400, 700], "style": "quirky grotesque", "vibe": "editorial, creative" },
+        { "name": "Public Sans", "stack": "'Public Sans', sans-serif", "weights": [300, 400, 600, 700], "style": "neutral grotesque", "vibe": "government, news, neutral" },
+        { "name": "Sora", "stack": "'Sora', sans-serif", "weights": [300, 400, 600, 700], "style": "geometric rounded", "vibe": "modern, SaaS, clean" },
+        { "name": "Nunito", "stack": "'Nunito', sans-serif", "weights": [300, 400, 600, 700], "style": "rounded sans", "vibe": "playful apps, kids, education" },
+        { "name": "Rubik", "stack": "'Rubik', sans-serif", "weights": [300, 400, 500, 700], "style": "rounded sans", "vibe": "clean, rounded, approachable" },
+        { "name": "Barlow", "stack": "'Barlow', sans-serif", "weights": [300, 400, 600, 700], "style": "condensed grotesque", "vibe": "industrial, clean UI" },
+        { "name": "Mulish", "stack": "'Mulish', sans-serif", "weights": [300, 400, 600, 700], "style": "humanist sans", "vibe": "blogs, content, readable" }
+      ],
+
+      "serif": [
+        { "name": "Lora", "stack": "'Lora', Georgia, serif", "weights": [400, 700], "style": "contemporary serif", "vibe": "blogs, writing, literary" },
+        { "name": "Merriweather", "stack": "'Merriweather', Georgia, serif", "weights": [300, 400, 700], "style": "screen serif", "vibe": "news, long-form reading" },
+        { "name": "Source Serif 4", "stack": "'Source Serif 4', Georgia, serif", "weights": [300, 400, 700], "style": "editorial serif", "vibe": "editorial, elegant reading" },
+        { "name": "Crimson Pro", "stack": "'Crimson Pro', Georgia, serif", "weights": [300, 400, 700], "style": "classical serif", "vibe": "academic, literary, elegant" },
+        { "name": "Bitter", "stack": "'Bitter', Georgia, serif", "weights": [300, 400, 700], "style": "slab serif", "vibe": "newspaper, bold reading" },
+        { "name": "EB Garamond", "stack": "'EB Garamond', Georgia, serif", "weights": [400, 700], "style": "classical Garamond", "vibe": "literary, old school, refined" },
+        { "name": "Libre Baskerville", "stack": "'Libre Baskerville', Georgia, serif", "weights": [400, 700], "style": "classic Baskerville", "vibe": "classic, printing, editorial" },
+        { "name": "Alice", "stack": "'Alice', Georgia, serif", "weights": [400], "style": "delicate serif", "vibe": "feminine, elegant, soft" }
+      ],
+
+      "mono": [
+        { "name": "JetBrains Mono", "stack": "'JetBrains Mono', monospace", "weights": [400, 700], "style": "developer mono", "vibe": "code, IDE, terminal" },
+        { "name": "Fira Code", "stack": "'Fira Code', monospace", "weights": [300, 400, 700], "style": "ligature mono", "vibe": "code, terminal, dev tools" },
+        { "name": "Space Mono", "stack": "'Space Mono', monospace", "weights": [400, 700], "style": "retro mono", "vibe": "space, retro-tech, design-forward" },
+        { "name": "IBM Plex Mono", "stack": "'IBM Plex Mono', monospace", "weights": [300, 400, 700], "style": "corporate mono", "vibe": "enterprise, clean data" },
+        { "name": "Source Code Pro", "stack": "'Source Code Pro', monospace", "weights": [300, 400, 700], "style": "readable mono", "vibe": "code docs, clean terminal" },
+        { "name": "Oxanium", "stack": "'Oxanium', monospace", "weights": [300, 400, 700], "style": "geometric mono", "vibe": "gaming, esports, tech" },
+        { "name": "Share Tech Mono", "stack": "'Share Tech Mono', monospace", "weights": [400], "style": "terminal mono", "vibe": "hacker, matrix, cyber" },
+        { "name": "VT323", "stack": "'VT323', monospace", "weights": [400], "style": "retro terminal", "vibe": "retro computer, pixel, lo-fi" },
+        { "name": "Roboto Mono", "stack": "'Roboto Mono', monospace", "weights": [300, 400, 700], "style": "clean mono", "vibe": "neutral, dev tools, clean" },
+        { "name": "Inconsolata", "stack": "'Inconsolata', monospace", "weights": [300, 400, 700], "style": "humanist mono", "vibe": "code, readable terminal" }
+      ],
+
+      "script": [
+        { "name": "Dancing Script", "stack": "'Dancing Script', cursive", "weights": [400, 700], "style": "casual script", "vibe": "wedding, invitations, friendly" },
+        { "name": "Great Vibes", "stack": "'Great Vibes', cursive", "weights": [400], "style": "calligraphic", "vibe": "wedding, luxury, romantic" },
+        { "name": "Pacifico", "stack": "'Pacifico', cursive", "weights": [400], "style": "brush script", "vibe": "retro brand, beach, fun" },
+        { "name": "Sacramento", "stack": "'Sacramento', cursive", "weights": [400], "style": "thin calligraphic", "vibe": "luxury, minimal wedding, boutique" },
+        { "name": "Satisfy", "stack": "'Satisfy', cursive", "weights": [400], "style": "casual script", "vibe": "food, lifestyle, casual brand" },
+        { "name": "Allura", "stack": "'Allura', cursive", "weights": [400], "style": "formal script", "vibe": "formal, wedding, premium" },
+        { "name": "Pinyon Script", "stack": "'Pinyon Script', cursive", "weights": [400], "style": "copperplate script", "vibe": "vintage, luxury stationery" },
+        { "name": "Tangerine", "stack": "'Tangerine', cursive", "weights": [400, 700], "style": "thin script", "vibe": "delicate, elegant, fashion" },
+        { "name": "Niconne", "stack": "'Niconne', cursive", "weights": [400], "style": "informal script", "vibe": "casual, handwritten, playful" }
+      ],
+
+      "experimental": [
+        { "name": "Rubik Glitch", "stack": "'Rubik Glitch', sans-serif", "weights": [400], "style": "glitch display", "vibe": "cyber, glitch art, hacker" },
+        { "name": "Rubik Dirt", "stack": "'Rubik Dirt', sans-serif", "weights": [400], "style": "textured display", "vibe": "grungy, textured, artistic" },
+        { "name": "Rubik Burned", "stack": "'Rubik Burned', sans-serif", "weights": [400], "style": "burned display", "vibe": "dark, horror, grunge" },
+        { "name": "Rubik Moonrocks", "stack": "'Rubik Moonrocks', sans-serif", "weights": [400], "style": "speckled display", "vibe": "space, galaxy, psychedelic" },
+        { "name": "Bungee Shade", "stack": "'Bungee Shade', sans-serif", "weights": [400], "style": "3D shadow signage", "vibe": "retro 3D, arcade, fun" },
+        { "name": "Bungee Outline", "stack": "'Bungee Outline', sans-serif", "weights": [400], "style": "outline signage", "vibe": "outlined, bold, signage" },
+        { "name": "Press Start 2P", "stack": "'Press Start 2P', monospace", "weights": [400], "style": "pixel display", "vibe": "gaming, retro 8-bit, arcade" },
+        { "name": "VT323", "stack": "'VT323', monospace", "weights": [400], "style": "retro CRT terminal", "vibe": "retro computer, terminal hacker" },
+        { "name": "Pixelify Sans", "stack": "'Pixelify Sans', sans-serif", "weights": [400, 700], "style": "modern pixel", "vibe": "modern gaming, playful pixel" },
+        { "name": "Sixtyfour", "stack": "'Sixtyfour', monospace", "weights": [400], "style": "variable pixel retro", "vibe": "retro computer, vintage digital" },
+        { "name": "Flow Circular", "stack": "'Flow Circular', sans-serif", "weights": [400], "style": "dotted circle", "vibe": "artsy, experimental, print" }
+      ]
+    },
+
+    "pairings": [
+      {
+        "id": "luxury-editorial",
+        "display": "Playfair Display",
+        "body": "DM Sans",
+        "mono": "JetBrains Mono",
+        "accent": "Cormorant Garamond Italic",
+        "vibe": "Luxury brand, editorial magazine, high fashion"
+      },
+      {
+        "id": "tech-futuristic",
+        "display": "Orbitron",
+        "body": "Exo 2",
+        "mono": "Space Mono",
+        "accent": "Audiowide",
+        "vibe": "Tech startup, sci-fi, gaming UI, dashboard"
+      },
+      {
+        "id": "bold-streetwear",
+        "display": "Bebas Neue",
+        "body": "Barlow",
+        "mono": "Oxanium",
+        "accent": "Bungee",
+        "vibe": "Streetwear, sports brand, sneakers, gym"
+      },
+      {
+        "id": "creative-agency",
+        "display": "Syne",
+        "body": "Manrope",
+        "mono": "Fira Code",
+        "accent": "Syne Italic",
+        "vibe": "Creative studio, portfolio, agency, design"
+      },
+      {
+        "id": "web3-crypto",
+        "display": "Unbounded",
+        "body": "Outfit",
+        "mono": "Share Tech Mono",
+        "accent": "Turret Road",
+        "vibe": "Web3, crypto, NFT, blockchain"
+      },
+      {
+        "id": "modern-saas",
+        "display": "Epilogue",
+        "body": "Plus Jakarta Sans",
+        "mono": "Roboto Mono",
+        "accent": "Urbanist",
+        "vibe": "SaaS, fintech, clean product"
+      },
+      {
+        "id": "retro-vintage",
+        "display": "Righteous",
+        "body": "Karla",
+        "mono": "VT323",
+        "accent": "Pacifico",
+        "vibe": "Retro brand, vintage, 70s-90s inspired"
+      },
+      {
+        "id": "literary-blog",
+        "display": "Bodoni Moda",
+        "body": "Lora",
+        "mono": "Inconsolata",
+        "accent": "Sacramento",
+        "vibe": "Literary blog, writing platform, book"
+      },
+      {
+        "id": "glitch-cyber",
+        "display": "Rubik Glitch",
+        "body": "Rajdhani",
+        "mono": "Share Tech Mono",
+        "accent": "Bungee Outline",
+        "vibe": "Glitch art, cyberpunk, hacker, dark web aesthetic"
+      },
+      {
+        "id": "minimal-elegant",
+        "display": "Cormorant Garamond",
+        "body": "Public Sans",
+        "mono": "IBM Plex Mono",
+        "accent": "Great Vibes",
+        "vibe": "Minimal luxury, wedding, boutique, spa"
+      },
+      {
+        "id": "pixel-gaming",
+        "display": "Press Start 2P",
+        "body": "Pixelify Sans",
+        "mono": "VT323",
+        "accent": "Sixtyfour",
+        "vibe": "Retro gaming, arcade, 8-bit"
+      },
+      {
+        "id": "greatdesk-signature",
+        "display": "Greatdesk",
+        "body": "Greatdesk",
+        "mono": "JetBrains Mono",
+        "accent": "Greatdesk Italic",
+        "vibe": "Rhiley's default signature font stack"
+      }
+    ]
+  },
+
+  "framerMotion": {
+
+    "fadeVariants": {
+      "fadeUp": {
+        "hidden": { "opacity": 0, "y": 40 },
+        "visible": { "opacity": 1, "y": 0, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "y": -20, "transition": { "duration": 0.3, "ease": "easeIn" } }
+      },
+      "fadeDown": {
+        "hidden": { "opacity": 0, "y": -40 },
+        "visible": { "opacity": 1, "y": 0, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "y": 20, "transition": { "duration": 0.3 } }
+      },
+      "fadeLeft": {
+        "hidden": { "opacity": 0, "x": -60 },
+        "visible": { "opacity": 1, "x": 0, "transition": { "duration": 0.7, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "x": 30, "transition": { "duration": 0.3 } }
+      },
+      "fadeRight": {
+        "hidden": { "opacity": 0, "x": 60 },
+        "visible": { "opacity": 1, "x": 0, "transition": { "duration": 0.7, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "x": -30, "transition": { "duration": 0.3 } }
+      },
+      "fadeScale": {
+        "hidden": { "opacity": 0, "scale": 0.85 },
+        "visible": { "opacity": 1, "scale": 1, "transition": { "duration": 0.5, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "scale": 0.95, "transition": { "duration": 0.25 } }
+      },
+      "fadeBlur": {
+        "hidden": { "opacity": 0, "filter": "blur(12px)", "y": 20 },
+        "visible": { "opacity": 1, "filter": "blur(0px)", "y": 0, "transition": { "duration": 0.7, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "filter": "blur(8px)", "transition": { "duration": 0.3 } }
+      },
+      "fadeLarge": {
+        "hidden": { "opacity": 0, "y": 80 },
+        "visible": { "opacity": 1, "y": 0, "transition": { "duration": 0.9, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "opacity": 0, "y": -40 }
+      },
+      "fadeSubtle": {
+        "hidden": { "opacity": 0, "y": 15 },
+        "visible": { "opacity": 1, "y": 0, "transition": { "duration": 0.4, "ease": "easeOut" } },
+        "exit": { "opacity": 0, "y": -8 }
+      }
+    },
+
+    "slideVariants": {
+      "slideFromBottom": {
+        "hidden": { "y": "100%", "opacity": 0 },
+        "visible": { "y": 0, "opacity": 1, "transition": { "type": "spring", "stiffness": 100, "damping": 20 } },
+        "exit": { "y": "100%", "opacity": 0, "transition": { "duration": 0.4, "ease": "easeIn" } }
+      },
+      "slideFromTop": {
+        "hidden": { "y": "-100%", "opacity": 0 },
+        "visible": { "y": 0, "opacity": 1, "transition": { "type": "spring", "stiffness": 100, "damping": 20 } },
+        "exit": { "y": "-100%", "opacity": 0, "transition": { "duration": 0.4 } }
+      },
+      "slidePanel": {
+        "hidden": { "x": "-100%" },
+        "visible": { "x": 0, "transition": { "type": "spring", "stiffness": 300, "damping": 35 } },
+        "exit": { "x": "-100%", "transition": { "duration": 0.35, "ease": [0.32, 0, 0.67, 0] } }
+      },
+      "slidePanelRight": {
+        "hidden": { "x": "100%" },
+        "visible": { "x": 0, "transition": { "type": "spring", "stiffness": 300, "damping": 35 } },
+        "exit": { "x": "100%", "transition": { "duration": 0.35, "ease": "easeIn" } }
+      },
+      "clipRevealLeft": {
+        "hidden": { "clipPath": "inset(0 100% 0 0)" },
+        "visible": { "clipPath": "inset(0 0% 0 0)", "transition": { "duration": 0.9, "ease": [0.76, 0, 0.24, 1] } },
+        "exit": { "clipPath": "inset(0 0% 0 100%)", "transition": { "duration": 0.5 } }
+      },
+      "clipRevealRight": {
+        "hidden": { "clipPath": "inset(0 0 0 100%)" },
+        "visible": { "clipPath": "inset(0 0 0 0%)", "transition": { "duration": 0.9, "ease": [0.76, 0, 0.24, 1] } },
+        "exit": { "clipPath": "inset(0 100% 0 0%)", "transition": { "duration": 0.5 } }
+      },
+      "curtainRevealDown": {
+        "hidden": { "clipPath": "inset(0 0 100% 0)" },
+        "visible": { "clipPath": "inset(0 0 0% 0)", "transition": { "duration": 0.8, "ease": [0.76, 0, 0.24, 1] } },
+        "exit": { "clipPath": "inset(100% 0 0 0)", "transition": { "duration": 0.5 } }
+      },
+      "curtainRevealUp": {
+        "hidden": { "clipPath": "inset(100% 0 0 0)" },
+        "visible": { "clipPath": "inset(0% 0 0 0)", "transition": { "duration": 0.8, "ease": [0.76, 0, 0.24, 1] } },
+        "exit": { "clipPath": "inset(0 0 100% 0)", "transition": { "duration": 0.5 } }
+      }
+    },
+
+    "scaleVariants": {
+      "popIn": {
+        "hidden": { "scale": 0, "opacity": 0 },
+        "visible": { "scale": 1, "opacity": 1, "transition": { "type": "spring", "stiffness": 400, "damping": 17 } },
+        "exit": { "scale": 0, "opacity": 0, "transition": { "duration": 0.2 } }
+      },
+      "breathe": {
+        "hidden": { "scale": 0.8, "opacity": 0 },
+        "visible": { "scale": 1, "opacity": 1, "transition": { "type": "spring", "stiffness": 200, "damping": 20 } },
+        "exit": { "scale": 1.1, "opacity": 0, "transition": { "duration": 0.3 } }
+      },
+      "zoomOut": {
+        "hidden": { "scale": 1.3, "opacity": 0 },
+        "visible": { "scale": 1, "opacity": 1, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "scale": 0.9, "opacity": 0 }
+      },
+      "elastic": {
+        "hidden": { "scale": 0, "rotate": -10, "opacity": 0 },
+        "visible": { "scale": 1, "rotate": 0, "opacity": 1, "transition": { "type": "spring", "stiffness": 500, "damping": 15 } },
+        "exit": { "scale": 0, "rotate": 10, "opacity": 0 }
+      },
+      "scaleSubtle": {
+        "hidden": { "scale": 0.92, "opacity": 0 },
+        "visible": { "scale": 1, "opacity": 1, "transition": { "duration": 0.5, "ease": "easeOut" } },
+        "exit": { "scale": 0.95, "opacity": 0 }
+      }
+    },
+
+    "rotateVariants": {
+      "spinIn": {
+        "hidden": { "rotate": -180, "opacity": 0, "scale": 0.5 },
+        "visible": { "rotate": 0, "opacity": 1, "scale": 1, "transition": { "type": "spring", "stiffness": 200, "damping": 20 } },
+        "exit": { "rotate": 180, "opacity": 0, "scale": 0.5 }
+      },
+      "flipX": {
+        "hidden": { "rotateX": 90, "opacity": 0 },
+        "visible": { "rotateX": 0, "opacity": 1, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "rotateX": -90, "opacity": 0 }
+      },
+      "flipY": {
+        "hidden": { "rotateY": 90, "opacity": 0 },
+        "visible": { "rotateY": 0, "opacity": 1, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "rotateY": -90, "opacity": 0 }
+      },
+      "tiltIn": {
+        "hidden": { "rotate": 5, "y": 30, "opacity": 0 },
+        "visible": { "rotate": 0, "y": 0, "opacity": 1, "transition": { "type": "spring", "stiffness": 150, "damping": 18 } },
+        "exit": { "rotate": -5, "y": -20, "opacity": 0 }
+      },
+      "swingIn": {
+        "hidden": { "rotateX": -80, "opacity": 0, "transformOrigin": "top" },
+        "visible": { "rotateX": 0, "opacity": 1, "transition": { "type": "spring", "stiffness": 120, "damping": 14 } },
+        "exit": { "rotateX": 80, "opacity": 0 }
+      }
+    },
+
+    "textVariants": {
+      "maskReveal": {
+        "hidden": { "y": "110%" },
+        "visible": { "y": "0%", "transition": { "duration": 0.75, "ease": [0.76, 0, 0.24, 1] } }
+      },
+      "wordReveal": {
+        "hidden": { "opacity": 0, "y": 20, "rotateX": -40 },
+        "visible": { "opacity": 1, "y": 0, "rotateX": 0, "transition": { "type": "spring", "stiffness": 200, "damping": 24 } }
+      },
+      "letterReveal": {
+        "hidden": { "opacity": 0, "y": 40, "rotateY": -20 },
+        "visible": { "opacity": 1, "y": 0, "rotateY": 0, "transition": { "type": "spring", "stiffness": 300, "damping": 20 } }
+      },
+      "blurText": {
+        "hidden": { "opacity": 0, "filter": "blur(8px)", "y": 10 },
+        "visible": { "opacity": 1, "filter": "blur(0px)", "y": 0, "transition": { "duration": 0.5, "ease": "easeOut" } }
+      },
+      "typewriter": {
+        "hidden": { "opacity": 0, "x": -5 },
+        "visible": { "opacity": 1, "x": 0, "transition": { "duration": 0.03 } }
+      },
+      "slideUp": {
+        "hidden": { "y": 30, "opacity": 0 },
+        "visible": { "y": 0, "opacity": 1, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } }
+      },
+      "scaleReveal": {
+        "hidden": { "scale": 1.2, "opacity": 0 },
+        "visible": { "scale": 1, "opacity": 1, "transition": { "duration": 0.5, "ease": [0.22, 1, 0.36, 1] } }
+      }
+    },
+
+    "staggerContainers": {
+      "stagger005": {
+        "hidden": { "opacity": 0 },
+        "visible": { "opacity": 1, "transition": { "staggerChildren": 0.05 } }
+      },
+      "stagger01": {
+        "hidden": { "opacity": 0 },
+        "visible": { "opacity": 1, "transition": { "staggerChildren": 0.1, "delayChildren": 0.1 } }
+      },
+      "stagger015": {
+        "hidden": { "opacity": 0 },
+        "visible": { "opacity": 1, "transition": { "staggerChildren": 0.15, "delayChildren": 0.1 } }
+      },
+      "stagger02": {
+        "hidden": { "opacity": 0 },
+        "visible": { "opacity": 1, "transition": { "staggerChildren": 0.2, "delayChildren": 0.15 } }
+      },
+      "stagger03": {
+        "hidden": { "opacity": 0 },
+        "visible": { "opacity": 1, "transition": { "staggerChildren": 0.3, "delayChildren": 0.2 } }
+      },
+      "staggerReverse": {
+        "hidden": { "opacity": 0 },
+        "visible": { "opacity": 1, "transition": { "staggerChildren": 0.1, "staggerDirection": -1 } }
+      },
+      "cascade": {
+        "hidden": {},
+        "visible": { "transition": { "staggerChildren": 0.08, "delayChildren": 0.2 } },
+        "exit": { "transition": { "staggerChildren": 0.05, "staggerDirection": -1 } }
+      },
+      "gridReveal": {
+        "hidden": {},
+        "visible": { "transition": { "staggerChildren": 0.06, "delayChildren": 0.1 } }
+      }
+    },
+
+    "pageTransitions": {
+      "slide": {
+        "initial": { "x": "100vw", "opacity": 0 },
+        "animate": { "x": 0, "opacity": 1, "transition": { "type": "spring", "stiffness": 80, "damping": 20 } },
+        "exit": { "x": "-100vw", "opacity": 0, "transition": { "duration": 0.4, "ease": "easeIn" } }
+      },
+      "fade": {
+        "initial": { "opacity": 0 },
+        "animate": { "opacity": 1, "transition": { "duration": 0.5, "ease": "easeOut" } },
+        "exit": { "opacity": 0, "transition": { "duration": 0.35, "ease": "easeIn" } }
+      },
+      "scaleUp": {
+        "initial": { "scale": 0.96, "opacity": 0, "y": 20 },
+        "animate": { "scale": 1, "opacity": 1, "y": 0, "transition": { "duration": 0.6, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "scale": 1.04, "opacity": 0, "transition": { "duration": 0.3 } }
+      },
+      "blur": {
+        "initial": { "filter": "blur(20px)", "opacity": 0, "scale": 1.05 },
+        "animate": { "filter": "blur(0px)", "opacity": 1, "scale": 1, "transition": { "duration": 0.7, "ease": "easeOut" } },
+        "exit": { "filter": "blur(20px)", "opacity": 0, "scale": 0.98, "transition": { "duration": 0.4 } }
+      },
+      "wipe": {
+        "initial": { "clipPath": "polygon(0 0, 0 0, 0 100%, 0% 100%)" },
+        "animate": { "clipPath": "polygon(0 0, 100% 0, 100% 100%, 0 100%)", "transition": { "duration": 0.75, "ease": [0.76, 0, 0.24, 1] } },
+        "exit": { "clipPath": "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)", "transition": { "duration": 0.5 } }
+      },
+      "morphPage": {
+        "initial": { "scale": 0.9, "opacity": 0, "borderRadius": "20px" },
+        "animate": { "scale": 1, "opacity": 1, "borderRadius": "0px", "transition": { "duration": 0.7, "ease": [0.22, 1, 0.36, 1] } },
+        "exit": { "scale": 1.05, "opacity": 0, "borderRadius": "20px", "transition": { "duration": 0.4 } }
+      }
+    },
+
+    "hoverEffects": {
+      "lift": {
+        "whileHover": { "y": -8, "boxShadow": "0 20px 40px rgba(0,0,0,0.2)" },
+        "transition": { "type": "spring", "stiffness": 400, "damping": 20 }
+      },
+      "liftHeavy": {
+        "whileHover": { "y": -14, "boxShadow": "0 30px 60px rgba(0,0,0,0.3)" },
+        "transition": { "type": "spring", "stiffness": 300, "damping": 18 }
+      },
+      "tiltLeft": {
+        "whileHover": { "rotate": -3, "scale": 1.02 },
+        "transition": { "type": "spring", "stiffness": 400, "damping": 20 }
+      },
+      "tiltRight": {
+        "whileHover": { "rotate": 3, "scale": 1.02 },
+        "transition": { "type": "spring", "stiffness": 400, "damping": 20 }
+      },
+      "glow": {
+        "whileHover": { "boxShadow": "0 0 30px rgba(139,92,246,0.6)", "scale": 1.02 },
+        "transition": { "duration": 0.2 }
+      },
+      "glowCyan": {
+        "whileHover": { "boxShadow": "0 0 30px rgba(6,182,212,0.6)", "scale": 1.02 },
+        "transition": { "duration": 0.2 }
+      },
+      "glowPink": {
+        "whileHover": { "boxShadow": "0 0 30px rgba(236,72,153,0.6)", "scale": 1.02 },
+        "transition": { "duration": 0.2 }
+      },
+      "press": {
+        "whileTap": { "scale": 0.97 },
+        "transition": { "type": "spring", "stiffness": 500, "damping": 30 }
+      },
+      "rubber": {
+        "whileHover": { "scale": 1.15 },
+        "transition": { "type": "spring", "stiffness": 600, "damping": 10 }
+      },
+      "magnetic": {
+        "whileHover": { "scale": 1.05, "y": -4 },
+        "transition": { "type": "spring", "stiffness": 300, "damping": 15 }
+      },
+      "wobble": {
+        "whileHover": { "rotate": [0, -5, 5, -5, 5, 0] },
+        "transition": { "duration": 0.5, "ease": "easeInOut" }
+      },
+      "bounce": {
+        "whileHover": { "y": [0, -12, 0, -6, 0] },
+        "transition": { "duration": 0.5, "ease": "easeOut" }
+      },
+      "shake": {
+        "whileHover": { "x": [0, -4, 4, -4, 4, 0] },
+        "transition": { "duration": 0.4, "ease": "easeInOut" }
+      },
+      "spin": {
+        "whileHover": { "rotate": 360 },
+        "transition": { "duration": 0.5, "ease": "easeInOut" }
+      },
+      "scaleSubtle": {
+        "whileHover": { "scale": 1.03 },
+        "transition": { "type": "spring", "stiffness": 400, "damping": 20 }
+      },
+      "scaleLarge": {
+        "whileHover": { "scale": 1.1 },
+        "transition": { "type": "spring", "stiffness": 300, "damping": 15 }
+      }
+    },
+
+    "tapEffects": {
+      "scale": { "whileTap": { "scale": 0.96 } },
+      "scaleSmall": { "whileTap": { "scale": 0.93 } },
+      "scaleHard": { "whileTap": { "scale": 0.88 } },
+      "ripple": { "whileTap": { "scale": [1, 1.1, 0.97, 1] } },
+      "press": { "whileTap": { "scale": 0.95, "y": 2 } }
+    },
+
+    "scrollReveal": {
+      "fromBottom": {
+        "initial": { "y": 80, "opacity": 0 },
+        "whileInView": { "y": 0, "opacity": 1 },
+        "viewport": { "once": true, "amount": 0.15 },
+        "transition": { "type": "spring", "stiffness": 100, "damping": 20 }
+      },
+      "fromTop": {
+        "initial": { "y": -80, "opacity": 0 },
+        "whileInView": { "y": 0, "opacity": 1 },
+        "viewport": { "once": true, "amount": 0.15 },
+        "transition": { "type": "spring", "stiffness": 100, "damping": 20 }
+      },
+      "fromLeft": {
+        "initial": { "x": -80, "opacity": 0 },
+        "whileInView": { "x": 0, "opacity": 1 },
+        "viewport": { "once": true, "amount": 0.15 },
+        "transition": { "type": "spring", "stiffness": 100, "damping": 20 }
+      },
+      "fromRight": {
+        "initial": { "x": 80, "opacity": 0 },
+        "whileInView": { "x": 0, "opacity": 1 },
+        "viewport": { "once": true, "amount": 0.15 },
+        "transition": { "type": "spring", "stiffness": 100, "damping": 20 }
+      },
+      "scaleIn": {
+        "initial": { "scale": 0.75, "opacity": 0 },
+        "whileInView": { "scale": 1, "opacity": 1 },
+        "viewport": { "once": true },
+        "transition": { "type": "spring", "stiffness": 120, "damping": 22 }
+      },
+      "blurIn": {
+        "initial": { "opacity": 0, "filter": "blur(12px)" },
+        "whileInView": { "opacity": 1, "filter": "blur(0px)" },
+        "viewport": { "once": true },
+        "transition": { "duration": 0.8, "ease": "easeOut" }
+      },
+      "rotateIn": {
+        "initial": { "opacity": 0, "rotate": -15, "y": 40 },
+        "whileInView": { "opacity": 1, "rotate": 0, "y": 0 },
+        "viewport": { "once": true },
+        "transition": { "type": "spring", "stiffness": 130, "damping": 18 }
+      },
+      "popIn": {
+        "initial": { "scale": 0, "opacity": 0 },
+        "whileInView": { "scale": 1, "opacity": 1 },
+        "viewport": { "once": true },
+        "transition": { "type": "spring", "stiffness": 300, "damping": 20 }
+      }
+    },
+
+    "loopAnimations": {
+      "spinner": {
+        "animate": { "rotate": 360 },
+        "transition": { "repeat": "Infinity", "duration": 1, "ease": "linear" }
+      },
+      "pulse": {
+        "animate": { "scale": [1, 1.15, 1], "opacity": [1, 0.6, 1] },
+        "transition": { "repeat": "Infinity", "duration": 1.2, "ease": "easeInOut" }
+      },
+      "float": {
+        "animate": { "y": [-10, 10, -10] },
+        "transition": { "repeat": "Infinity", "duration": 3, "ease": "easeInOut" }
+      },
+      "floatRotate": {
+        "animate": { "y": [-10, 10, -10], "rotate": [-3, 3, -3] },
+        "transition": { "repeat": "Infinity", "duration": 4, "ease": "easeInOut" }
+      },
+      "ping": {
+        "animate": { "scale": [1, 2.5, 2.5], "opacity": [0.8, 0, 0] },
+        "transition": { "repeat": "Infinity", "duration": 1.5, "ease": "easeOut" }
+      },
+      "wave": {
+        "animate": { "scaleY": [0.3, 1, 0.3] },
+        "transition": { "repeat": "Infinity", "duration": 0.8, "ease": "easeInOut" }
+      },
+      "shimmer": {
+        "animate": { "backgroundPosition": ["-200% center", "200% center"] },
+        "transition": { "repeat": "Infinity", "duration": 1.5, "ease": "linear" }
+      },
+      "breathe": {
+        "animate": { "scale": [1, 1.06, 1] },
+        "transition": { "repeat": "Infinity", "duration": 2.5, "ease": "easeInOut" }
+      },
+      "blink": {
+        "animate": { "opacity": [1, 0, 1] },
+        "transition": { "repeat": "Infinity", "duration": 1, "ease": "easeInOut" }
+      },
+      "morphBlob": {
+        "animate": {
+          "borderRadius": [
+            "60% 40% 30% 70% / 60% 30% 70% 40%",
+            "30% 60% 70% 40% / 50% 60% 30% 60%",
+            "60% 40% 30% 70% / 60% 30% 70% 40%"
+          ]
+        },
+        "transition": { "repeat": "Infinity", "duration": 7, "ease": "easeInOut" }
+      },
+      "gradientShift": {
+        "animate": { "backgroundPosition": ["0% 50%", "100% 50%", "0% 50%"] },
+        "transition": { "repeat": "Infinity", "duration": 6, "ease": "linear" }
+      },
+      "ticker": {
+        "animate": { "x": [0, "-100%"] },
+        "transition": { "repeat": "Infinity", "duration": 20, "ease": "linear" }
+      }
+    },
+
+    "cardAnimations": {
+      "glassCard": {
+        "rest": { "scale": 1, "boxShadow": "0 4px 20px rgba(0,0,0,0.1)" },
+        "hover": { "scale": 1.03, "boxShadow": "0 20px 60px rgba(0,0,0,0.25)", "transition": { "type": "spring", "stiffness": 400, "damping": 20 } },
+        "tap": { "scale": 0.98 }
+      },
+      "floatCard": {
+        "rest": { "y": 0, "boxShadow": "0 4px 15px rgba(0,0,0,0.08)" },
+        "hover": { "y": -12, "boxShadow": "0 24px 50px rgba(0,0,0,0.18)", "transition": { "type": "spring", "stiffness": 250, "damping": 18 } }
+      },
+      "glowCard": {
+        "rest": { "boxShadow": "0 0 0 rgba(139,92,246,0)" },
+        "hover": { "boxShadow": "0 0 40px rgba(139,92,246,0.4)", "scale": 1.02, "transition": { "duration": 0.3 } }
+      },
+      "borderCard": {
+        "rest": { "borderColor": "transparent" },
+        "hover": { "borderColor": "#8b5cf6", "boxShadow": "0 0 0 3px rgba(139,92,246,0.2)", "transition": { "duration": 0.2 } }
+      }
+    },
+
+    "modalAnimations": {
+      "overlay": {
+        "initial": { "opacity": 0 },
+        "animate": { "opacity": 1 },
+        "exit": { "opacity": 0 },
+        "transition": { "duration": 0.3 }
+      },
+      "modalPop": {
+        "initial": { "scale": 0.85, "opacity": 0, "y": 30 },
+        "animate": { "scale": 1, "opacity": 1, "y": 0, "transition": { "type": "spring", "stiffness": 350, "damping": 25 } },
+        "exit": { "scale": 0.9, "opacity": 0, "y": 20, "transition": { "duration": 0.2 } }
+      },
+      "modalSlide": {
+        "initial": { "y": "100vh" },
+        "animate": { "y": 0, "transition": { "type": "spring", "stiffness": 200, "damping": 28 } },
+        "exit": { "y": "100vh", "transition": { "duration": 0.35, "ease": "easeIn" } }
+      },
+      "drawerLeft": {
+        "initial": { "x": "-100%" },
+        "animate": { "x": 0, "transition": { "type": "spring", "stiffness": 300, "damping": 35 } },
+        "exit": { "x": "-100%", "transition": { "duration": 0.3, "ease": "easeIn" } }
+      },
+      "drawerRight": {
+        "initial": { "x": "100%" },
+        "animate": { "x": 0, "transition": { "type": "spring", "stiffness": 300, "damping": 35 } },
+        "exit": { "x": "100%", "transition": { "duration": 0.3, "ease": "easeIn" } }
+      }
+    },
+
+    "notificationAnimations": {
+      "toastTop": {
+        "initial": { "y": -100, "opacity": 0, "scale": 0.9 },
+        "animate": { "y": 0, "opacity": 1, "scale": 1, "transition": { "type": "spring", "stiffness": 300, "damping": 24 } },
+        "exit": { "y": -80, "opacity": 0, "scale": 0.9, "transition": { "duration": 0.25 } }
+      },
+      "toastBottom": {
+        "initial": { "y": 100, "opacity": 0, "scale": 0.9 },
+        "animate": { "y": 0, "opacity": 1, "scale": 1, "transition": { "type": "spring", "stiffness": 300, "damping": 24 } },
+        "exit": { "y": 80, "opacity": 0, "scale": 0.9, "transition": { "duration": 0.25 } }
+      },
+      "badge": {
+        "initial": { "scale": 0 },
+        "animate": { "scale": 1, "transition": { "type": "spring", "stiffness": 500, "damping": 15 } },
+        "exit": { "scale": 0 }
+      }
+    },
+
+    "listItemAnimations": {
+      "itemFadeUp": {
+        "hidden": { "opacity": 0, "y": 20 },
+        "visible": { "opacity": 1, "y": 0, "transition": { "type": "spring", "stiffness": 200, "damping": 20 } }
+      },
+      "itemFadeLeft": {
+        "hidden": { "opacity": 0, "x": -20 },
+        "visible": { "opacity": 1, "x": 0, "transition": { "type": "spring", "stiffness": 200, "damping": 20 } }
+      },
+      "itemScale": {
+        "hidden": { "opacity": 0, "scale": 0.8 },
+        "visible": { "opacity": 1, "scale": 1, "transition": { "type": "spring", "stiffness": 250, "damping": 22 } }
+      },
+      "itemBlur": {
+        "hidden": { "opacity": 0, "filter": "blur(6px)", "y": 10 },
+        "visible": { "opacity": 1, "filter": "blur(0px)", "y": 0, "transition": { "duration": 0.4, "ease": "easeOut" } }
+      }
+    }
+  },
+
+  "transitions": {
+    "springs": {
+      "snappy": { "type": "spring", "stiffness": 500, "damping": 25 },
+      "smooth": { "type": "spring", "stiffness": 200, "damping": 28 },
+      "bouncy": { "type": "spring", "stiffness": 300, "damping": 12 },
+      "wobbly": { "type": "spring", "stiffness": 200, "damping": 8 },
+      "slow": { "type": "spring", "stiffness": 80, "damping": 20 },
+      "stiff": { "type": "spring", "stiffness": 700, "damping": 40 },
+      "gentle": { "type": "spring", "stiffness": 120, "damping": 25 },
+      "elastic": { "type": "spring", "stiffness": 400, "damping": 10 }
+    },
+    "easings": {
+      "easeOutExpo": [0.16, 1, 0.3, 1],
+      "easeOutQuart": [0.22, 1, 0.36, 1],
+      "easeInOutCubic": [0.65, 0, 0.35, 1],
+      "easeOutBack": [0.34, 1.56, 0.64, 1],
+      "dramatic": [0.76, 0, 0.24, 1],
+      "cinematic": [0.43, 0.13, 0.23, 0.96],
+      "sharp": [0.32, 0, 0.67, 0],
+      "bounceOut": [0.5, 1.5, 0.5, 1],
+      "slowIn": [0.7, 0, 1, 1],
+      "smoothOut": [0, 0, 0.2, 1]
+    },
+    "durations": {
+      "instant": 0.15,
+      "fast": 0.25,
+      "normal": 0.4,
+      "medium": 0.55,
+      "slow": 0.7,
+      "verySlow": 1.0,
+      "cinematic": 1.2,
+      "ultra": 1.8
+    }
+  },
+
+  "designTokens": {
+    "spacing": {
+      "scale": [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128, 160, 192, 256],
+      "note": "8pt grid system — all spacing is a multiple of 4 or 8"
+    },
+    "borderRadius": {
+      "none": "0px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "2xl": "20px",
+      "3xl": "24px",
+      "4xl": "32px",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06)",
+      "md": "0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06)",
+      "lg": "0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05)",
+      "xl": "0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04)",
+      "2xl": "0 25px 50px rgba(0,0,0,0.25)",
+      "3xl": "0 40px 80px rgba(0,0,0,0.3)",
+      "inner": "inset 0 2px 4px rgba(0,0,0,0.06)",
+      "glow_purple": "0 0 30px rgba(139,92,246,0.5)",
+      "glow_cyan": "0 0 30px rgba(6,182,212,0.5)",
+      "glow_pink": "0 0 30px rgba(236,72,153,0.5)",
+      "glow_white": "0 0 30px rgba(255,255,255,0.3)"
+    },
+    "typeScale": {
+      "xs": "clamp(0.65rem, 1vw, 0.75rem)",
+      "sm": "clamp(0.8rem, 1.2vw, 0.875rem)",
+      "base": "clamp(0.9rem, 1.5vw, 1rem)",
+      "lg": "clamp(1rem, 1.8vw, 1.125rem)",
+      "xl": "clamp(1.1rem, 2.2vw, 1.25rem)",
+      "2xl": "clamp(1.3rem, 2.8vw, 1.5rem)",
+      "3xl": "clamp(1.6rem, 3.5vw, 1.875rem)",
+      "4xl": "clamp(2rem, 4.5vw, 2.5rem)",
+      "5xl": "clamp(2.5rem, 6vw, 3.5rem)",
+      "6xl": "clamp(3rem, 8vw, 4.5rem)",
+      "7xl": "clamp(3.5rem, 10vw, 6rem)",
+      "8xl": "clamp(4rem, 12vw, 8rem)",
+      "display": "clamp(4.5rem, 15vw, 12rem)"
+    },
+    "colorPalettes": {
+      "dark_neon": {
+        "bg": "#0a0a0f",
+        "surface": "#111118",
+        "border": "#1e1e2e",
+        "accent1": "#8b5cf6",
+        "accent2": "#06b6d4",
+        "accent3": "#ec4899",
+        "text": "#f4f4f8",
+        "muted": "#6b7280"
+      },
+      "luxury_dark": {
+        "bg": "#0c0c0c",
+        "surface": "#141414",
+        "border": "#2a2a2a",
+        "accent1": "#d4af37",
+        "accent2": "#c0a060",
+        "text": "#f5f0e8",
+        "muted": "#888"
+      },
+      "cyber_blue": {
+        "bg": "#020817",
+        "surface": "#0d1b2a",
+        "border": "#1e3a5f",
+        "accent1": "#00d4ff",
+        "accent2": "#0066ff",
+        "accent3": "#7c3aed",
+        "text": "#e0f2fe",
+        "muted": "#4a7fa5"
+      },
+      "warm_editorial": {
+        "bg": "#faf7f2",
+        "surface": "#f0ebe1",
+        "border": "#d4c5a9",
+        "accent1": "#c2410c",
+        "accent2": "#92400e",
+        "text": "#1c1917",
+        "muted": "#78716c"
+      },
+      "minimal_light": {
+        "bg": "#ffffff",
+        "surface": "#f8f8f8",
+        "border": "#e5e5e5",
+        "accent1": "#000000",
+        "accent2": "#333333",
+        "text": "#111111",
+        "muted": "#999999"
+      },
+      "glassmorphism": {
+        "bg": "rgba(255,255,255,0.05)",
+        "surface": "rgba(255,255,255,0.08)",
+        "border": "rgba(255,255,255,0.12)",
+        "blur": "blur(20px)",
+        "text": "#ffffff",
+        "muted": "rgba(255,255,255,0.5)"
+      }
+    }
+  },
+
+  "componentPresets": {
+    "button": {
+      "primary": {
+        "whileHover": { "scale": 1.04, "y": -2 },
+        "whileTap": { "scale": 0.97 },
+        "transition": { "type": "spring", "stiffness": 400, "damping": 20 }
+      },
+      "ghost": {
+        "whileHover": { "scale": 1.02, "boxShadow": "0 0 0 2px rgba(255,255,255,0.3)" },
+        "whileTap": { "scale": 0.96 },
+        "transition": { "duration": 0.2 }
+      },
+      "icon": {
+        "whileHover": { "rotate": 15, "scale": 1.15 },
+        "whileTap": { "rotate": 0, "scale": 0.9 },
+        "transition": { "type": "spring", "stiffness": 400, "damping": 17 }
+      }
+    },
+    "image": {
+      "reveal": {
+        "initial": { "scale": 1.2, "filter": "blur(10px)", "opacity": 0 },
+        "animate": { "scale": 1, "filter": "blur(0px)", "opacity": 1 },
+        "transition": { "duration": 0.9, "ease": [0.22, 1, 0.36, 1] }
+      },
+      "parallax_hover": {
+        "whileHover": { "scale": 1.08 },
+        "transition": { "duration": 0.6, "ease": "easeOut" }
+      }
+    },
+    "navbar": {
+      "hide": {
+        "y": 0,
+        "opacity": 1,
+        "transition": { "duration": 0.35, "ease": "easeOut" }
+      },
+      "show": {
+        "y": -80,
+        "opacity": 0,
+        "transition": { "duration": 0.35, "ease": "easeIn" }
+      }
+    },
+    "accordion": {
+      "open": {
+        "height": "auto",
+        "opacity": 1,
+        "transition": { "type": "spring", "stiffness": 300, "damping": 30 }
+      },
+      "closed": {
+        "height": 0,
+        "opacity": 0,
+        "transition": { "type": "spring", "stiffness": 300, "damping": 30 }
+      }
+    }
+  },
+
+  "usageGuide": {
+    "howToUse": "Import variants by name and pass to Framer Motion's 'variants' prop. Use 'initial', 'animate', 'exit' keys for AnimatePresence. Use 'whileInView' objects directly on motion elements.",
+    "staggerExample": "Wrap children in a motion.div with staggerContainers.stagger01, then each child uses any itemAnimation variant.",
+    "scrollRevealExample": "Spread the scrollReveal object directly: <motion.div {...scrollReveal.fromBottom} />",
+    "hoverExample": "Spread hover effects: <motion.div {...hoverEffects.lift} />",
+    "loopExample": "Spread loop animations: <motion.div animate={loopAnimations.float.animate} transition={loopAnimations.float.transition} />",
+    "greatdeskNote": "Greatdesk font files must be placed in /public/fonts/. The fontFace string under custom.Greatdesk must be injected via a <style> tag or global CSS.",
+    "reducedMotion": "Always wrap animations in: const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches and skip animations if true."
+  }
+}

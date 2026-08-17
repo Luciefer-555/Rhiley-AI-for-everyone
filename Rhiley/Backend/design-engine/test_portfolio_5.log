@@ -1,0 +1,149 @@
+﻿Γùç injected env (2) from ..\..\.env // tip: Γîÿ override existing { override: true }
+=== Rhiley Full Pipeline Test ===
+
+[1] User Prompt: "I need a portfolio site, I'm a photographer"
+
+[1.5] Routing Intent...
+Γ£à Router determined route: "vague_prompt"
+
+[2] Generating Vague Blueprint via Archetypes (CODING_MODEL)...
+Γ£à Vague Blueprint generated successfully:
+ {
+  "_reasoning": "The user explicitly requested a portfolio site for a photographer, which matches the portfolio archetype's triggers and purpose.",
+  "archetype_id": "portfolio",
+  "layout": "vertical",
+  "designStyle": "cinematic-dark",
+  "motionPreset": "staggerRise",
+  "sections": [
+    {
+      "type": "hero",
+      "purpose": "Name/title + one-line description of what they do",
+      "source": "inferred_default",
+      "content": {
+        "title": "Your Name",
+        "subtitle": "Photographer specializing in portrait and landscape imagery"
+      }
+    },
+    {
+      "type": "section",
+      "purpose": "work_gallery",
+      "source": "inferred_default",
+      "content": {
+        "items": [
+          {
+            "title": "Portrait Series",
+            "description": "A collection of candid and studio portraits."
+          },
+          {
+            "title": "Landscape Shots",
+            "description": "Scenic captures from various natural locations."
+          },
+          {
+            "title": "Event Photography",
+            "description": "Highlights from weddings, parties, and corporate events."
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "purpose": "about",
+      "source": "inferred_default",
+      "content": {
+        "text": "I am a passionate photographer with over five years of experience capturing moments that tell a story. My work focuses on authentic emotions and natural light, delivering images that resonate with viewers."
+      }
+    },
+    {
+      "type": "section",
+      "purpose": "contact",
+      "source": "inferred_default",
+      "content": {
+        "formFields": [
+          {
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "label": "Message",
+            "type": "textarea"
+          }
+        ],
+        "buttonLabel": "Send Message"
+      }
+    },
+    {
+      "type": "nav",
+      "purpose": "top navigation",
+      "source": "inferred_default",
+      "content": {
+        "links": [
+          {
+            "label": "Work",
+            "href": "#work_gallery"
+          },
+          {
+            "label": "About",
+            "href": "#about"
+          },
+          {
+            "label": "Contact",
+            "href": "#contact"
+          }
+        ]
+      }
+    }
+  ]
+} 
+
+[3] Template Selection & Mapping...
+Γ£à Selected Template: skydda-ai-sentinel (from batch 3)
+Γ£à Mapped 5 sections to template slots.
+
+[4] Compiling TSX Code via NIM...
+[nimCompiler] Sending prompt to NIM...
+[nimCompiler] Compilation successful, output length: 3855
+Γ£à Code compiled successfully. Validating...
+Γ£à TSX Output Validated.
+
+[5] Scaffolding Next.js Project...
+Γ£à Wrote generated code to test-output/app/page.tsx
+Γ£à Project scaffolded successfully in /test-output.
+
+--- GENERATED HERO SECTION CODE (First 30 lines) ---
+import { motion } from "framer-motion"
+import { designTokens, motionPresets } from "@/ui-lib/designSystem"
+
+export default function Component() {
+  return (
+    <div style={{
+      background: designTokens.palettes.cinematicDark.background,
+      color: designTokens.palettes.cinematicDark.textPrimary,
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+      <section id="hero" style={{ padding: designTokens.spacing.section }}>
+        <motion.div
+          {...motionPresets.staggerRise.container}
+          style={{
+            boxShadow: designTokens.shadows["2xl"],
+            borderRadius: designTokens.radius["2xl"],
+            padding: designTokens.spacing.container
+          }}
+        >
+          <motion.h1
+            variants={motionPresets.staggerRise.item}
+            style={{ color: designTokens.palettes.cinematicDark.accent }}
+          >
+            Welcome
+          </motion.h1>
+          <motion.p variants={motionPresets.staggerRise.item}>Experience the future</motion.p>
+...
+
+Pipeline test complete.

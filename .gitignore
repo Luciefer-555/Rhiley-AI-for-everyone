@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+.npm-cache/
+
+# next.js
+.next/
+out/
+
+# env
+.env
+.env.local
+.env*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# live generated
+app/live/Component.tsx
+app/live/meta.json
+
+# test output
+test-output/
+
+*_results.txt
+*_results.json
+*findstr*
+*.log
+
+precise_search.txt
+fast_search.txt
+fast_search_2.txt
+filtered_nim.txt

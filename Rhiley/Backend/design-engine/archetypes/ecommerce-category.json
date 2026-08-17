@@ -1,0 +1,49 @@
+{
+  "archetype_id": "ecommerce-category",
+  "description": "Product-selling page — for requests implying items for sale (bakery with online ordering, shop, store, product catalog).",
+  "triggers": [
+    "store", "shop", "buy", "order online", "products", "catalog", "sell"
+  ],
+  "default_sections": [
+    {
+      "type": "hero",
+      "purpose": "Brand/shop name + short tagline + shop-now CTA",
+      "required": true,
+      "fill_guidance": "Keep commerce-forward — this hero should point at browsing/buying, not just describe the brand."
+    },
+    {
+      "type": "section",
+      "purpose": "product_grid",
+      "required": true,
+      "fill_guidance": "Grid of product cards (image, name, price). Use plausible generic items matching the stated subject (e.g. bakery → croissant, sourdough loaf, cupcake) with placeholder prices."
+    },
+    {
+      "type": "section",
+      "purpose": "about_or_story",
+      "required": false,
+      "fill_guidance": "Include for small/local businesses where a brand story adds trust (bakery, boutique). Skip for generic/large-catalog stores."
+    },
+    {
+      "type": "section",
+      "purpose": "testimonials",
+      "required": false,
+      "fill_guidance": "Include if trust/quality is a likely selling point for the subject (food, handmade goods)."
+    },
+    {
+      "type": "section",
+      "purpose": "location_or_contact",
+      "required": false,
+      "fill_guidance": "Include for anything implying a physical presence (bakery, local shop). Omit for a purely digital product store."
+    },
+    {
+      "type": "nav",
+      "purpose": "top navigation",
+      "required": true,
+      "fill_guidance": "Shop, sections present, Cart/Contact as applicable."
+    }
+  ],
+  "notes": [
+    "This is the archetype that should catch the 'bakery' example from earlier testing — bakery implies physical products, so this fits better than a generic landing-page for most bakery requests unless the user clarifies it's purely informational.",
+    "Product images are a known weak point without a real catalog — flag generated product entries as placeholder content, not final copy."
+  ]
+}

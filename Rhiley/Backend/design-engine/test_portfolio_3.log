@@ -1,0 +1,110 @@
+﻿Γùç injected env (2) from ..\..\.env // tip: Γùê secrets for agents [www.dotenvx.com]
+=== Rhiley Full Pipeline Test ===
+
+[1] User Prompt: "I need a portfolio site, I'm a photographer"
+
+[1.5] Routing Intent...
+Γ£à Router determined route: "vague_prompt"
+
+[2] Generating Vague Blueprint via Archetypes (CODING_MODEL)...
+Γ£à Vague Blueprint generated successfully:
+ {
+  "_reasoning": "The user explicitly requested a portfolio site for a photographer, which matches the portfolio archetype's triggers and purpose.",
+  "archetype_id": "portfolio",
+  "layout": "vertical",
+  "designStyle": "cinematic-dark",
+  "motionPreset": "staggerRise",
+  "sections": [
+    {
+      "type": "hero",
+      "purpose": "Name/title + one-line description of what they do",
+      "source": "inferred_default",
+      "content": {
+        "title": "Alex Morgan",
+        "subtitle": "Capturing moments through fineΓÇæart photography"
+      }
+    },
+    {
+      "type": "section",
+      "purpose": "work_gallery",
+      "source": "inferred_default",
+      "content": {
+        "title": "Featured Work",
+        "projects": [
+          {
+            "name": "Urban Streets",
+            "description": "BlackΓÇæwhite cityscape series"
+          },
+          {
+            "name": "Nature Whispers",
+            "description": "Landscape and macro shots"
+          },
+          {
+            "name": "Portrait Sessions",
+            "description": "Editorial and lifestyle portraits"
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "purpose": "about",
+      "source": "inferred_default",
+      "content": {
+        "title": "About Me",
+        "bio": "I am a passionate photographer based in Portland, specializing in landscape, portrait, and street photography. With over 8 years of experience, I strive to tell stories that evoke emotion and highlight the beauty in everyday moments."
+      }
+    },
+    {
+      "type": "section",
+      "purpose": "contact",
+      "source": "inferred_default",
+      "content": {
+        "title": "Get in Touch",
+        "formFields": [
+          {
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "label": "Message",
+            "type": "textarea"
+          }
+        ],
+        "submitLabel": "Send Message"
+      }
+    },
+    {
+      "type": "nav",
+      "purpose": "top navigation",
+      "source": "inferred_default",
+      "content": {
+        "links": [
+          {
+            "label": "Work",
+            "href": "#work_gallery"
+          },
+          {
+            "label": "About",
+            "href": "#about"
+          },
+          {
+            "label": "Contact",
+            "href": "#contact"
+          }
+        ]
+      }
+    }
+  ]
+} 
+
+[3] Template Selection & Mapping...
+Γ£à Selected Template: skydda-ai-sentinel (from batch 3)
+Γ£à Mapped 5 sections to template slots.
+
+[4] Compiling TSX Code via NIM...
+[nimCompiler] Sending prompt to NIM...

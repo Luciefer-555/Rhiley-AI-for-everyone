@@ -1,0 +1,43 @@
+{
+  "archetype_id": "portfolio",
+  "description": "Personal or studio portfolio site — for individuals/creatives showcasing work rather than selling a product.",
+  "triggers": [
+    "portfolio", "my work", "photographer", "designer", "artist", "freelancer", "personal site", "resume site"
+  ],
+  "default_sections": [
+    {
+      "type": "hero",
+      "purpose": "Name/title + one-line description of what they do",
+      "required": true,
+      "fill_guidance": "Keep it short and personal, not sales-oriented like the landing-page hero."
+    },
+    {
+      "type": "section",
+      "purpose": "work_gallery",
+      "required": true,
+      "fill_guidance": "Grid or list of project/work items. Use generic placeholder project names/descriptions matching the stated field (e.g. photography → shoot titles)."
+    },
+    {
+      "type": "section",
+      "purpose": "about",
+      "required": true,
+      "fill_guidance": "Short bio paragraph, first person or third person depending on tone cues in the prompt."
+    },
+    {
+      "type": "section",
+      "purpose": "contact",
+      "required": true,
+      "fill_guidance": "Simple contact form or contact details section, no pricing/CTA-heavy language."
+    },
+    {
+      "type": "nav",
+      "purpose": "top navigation",
+      "required": true,
+      "fill_guidance": "Work, About, Contact — adjust labels to match actual section purposes present."
+    }
+  ],
+  "notes": [
+    "No pricing or testimonials section by default — portfolios are rarely e-commerce/sales pages. Only add pricing if the prompt explicitly mentions rates/booking.",
+    "Visual density/style (grid vs list gallery) should come from an image reference (Mode 1/hybrid) when available; default to a simple grid otherwise."
+  ]
+}

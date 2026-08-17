@@ -1,0 +1,49 @@
+{
+  "archetype_id": "landing-page",
+  "description": "Single-page marketing/product site — the default for most vague 'make me a website for X' requests when X is a product, app, or service.",
+  "triggers": [
+    "app", "product", "service", "startup", "saas", "launch page", "website for my [business]"
+  ],
+  "default_sections": [
+    {
+      "type": "hero",
+      "purpose": "Headline + short subheadline + primary CTA button",
+      "required": true,
+      "fill_guidance": "Headline should state what the thing is or does in plain language, using the subject the user mentioned (e.g. 'bakery' → bread/pastry-oriented headline)."
+    },
+    {
+      "type": "section",
+      "purpose": "features_or_benefits",
+      "required": true,
+      "fill_guidance": "3-4 short items describing what's offered. Infer plausible generic items for the stated subject if user gave none."
+    },
+    {
+      "type": "section",
+      "purpose": "pricing",
+      "required": false,
+      "fill_guidance": "Include only if the subject implies paid offerings (SaaS, product, service). Omit for things like a personal portfolio or a purely informational bakery site with no online ordering mentioned."
+    },
+    {
+      "type": "section",
+      "purpose": "testimonials",
+      "required": false,
+      "fill_guidance": "Include for anything with a credibility/trust angle (service businesses, SaaS). Use placeholder-style generic quotes, never invent named real people."
+    },
+    {
+      "type": "section",
+      "purpose": "closing_cta",
+      "required": true,
+      "fill_guidance": "Restate the primary action from the hero (sign up, order now, contact us) in a simpler closing form."
+    },
+    {
+      "type": "nav",
+      "purpose": "top navigation",
+      "required": true,
+      "fill_guidance": "Links matching whichever sections are actually present in this instance."
+    }
+  ],
+  "notes": [
+    "This is a structure pattern, not a template pointer — template selection happens as a separate step against whatever's in the live registry at request time.",
+    "'required: false' sections should only be added when the user's subject plausibly calls for them — don't pad every site with every optional section by default."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "page",
+  "layout": "vertical",
+  "sections": [
+    {
+      "type": "navbar",
+      "logo": "MyBrand",
+      "links": ["Home", "About", "Contact"]
+    },
+    {
+      "type": "hero",
+      "title": "Welcome",
+      "subtitle": "We build things",
+      "buttonText": "Get Started"
+    },
+    {
+      "type": "cardGrid",
+      "columns": 3,
+      "cards": [
+        {
+          "title": "Card 1",
+          "description": "Description here"
+        },
+        {
+          "title": "Card 2", 
+          "description": "Another description"
+        },
+        {
+          "title": "Card 3",
+          "description": "Third description"
+        }
+      ]
+    },
+    {
+      "type": "footer",
+      "text": "© 2026 MyBrand"
+    }
+  ]
+}
