@@ -1,9 +1,0 @@
-﻿Γùç injected env (2) from ..\..\.env // tip: Γîÿ suppress logs { quiet: true }
-=== Rhiley Full Pipeline Test ===
-
-[1] User Prompt: "I need a portfolio site, I'm a photographer"
-
-[1.5] Routing Intent...
-Γ£à Router determined route: "vague_prompt"
-
-[2] Generating Vague Blueprint via Archetypes (CODING_MODEL)...
